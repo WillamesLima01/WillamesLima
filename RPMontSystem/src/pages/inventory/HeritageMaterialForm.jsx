@@ -34,7 +34,7 @@ const HeritageMaterialForm = () => {
         axios[method](url, product)
             .then(() => {
                 alert(`Produto ${id ? 'atualizado' : 'adicionado'} com sucesso!`)
-                navigate("/listar-produtos")
+                navigate("/inventory/listar-produtos")
             })
             .catch(error => console.error("Ocorreu um erro: ", error))
     }

@@ -206,6 +206,16 @@
       "imagem2": "../../assets/imgLadoDireito.jpg",
       "imagem3": "../../assets/imgLadoEsquerdo.jpg",
       "imagem4": "../../assets/resenhaDescritiva.jpg"
+    },
+    {
+      "id": "1afc",
+      "name": "hera",
+      "birthDate": "2024-04-02",
+      "coat": "castanho escuro",
+      "inclusion": "2012-10-01",
+      "record": "PMPB00123567",
+      "local": "RPMont",
+      "sex": "femea"
     }
   ]
 }

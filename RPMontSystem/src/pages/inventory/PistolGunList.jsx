@@ -37,7 +37,7 @@ const PistolGunList = () => {
   return (
     <div className={`${styles.container} mt-5`}> 
         <h2 className='mb-4'>Lista de Pistolas</h2>
-        <button onClick={() => navigate('/add-pistola')} className='btn btn-primary mb-2'>Cadastrar Pistola</button>
+        <button onClick={() => navigate('/inventory/add-pistola')} className='btn btn-primary mb-2'>Cadastrar Pistola</button>
 
         <table className={styles.table}>
             <thead>
@@ -63,7 +63,7 @@ const PistolGunList = () => {
                             <td>{gun.observation}</td>
 
                             <td className={styles.btAcao}>
-                                <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/editar-pistola/${gun.id}`)}>
+                                <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/inventory/editar-pistola/${gun.id}`)}>
                                     <FaPenClip  className= {styles.btEditar}/>
                                 </button>
                                 <button title='excluir' onClick={() => deleteGun(gun.id)} className="btn btn-sm btn-danger me-md-2">

@@ -36,7 +36,7 @@ const BulletproofVestList = () => {
   return (
     <div className={styles.container} mt-5> 
         <h2 className='mb-4'>Lista de Colete Balístico</h2>
-        <button onClick={() => navigate('/add-coleteBalistico')} className="btn btn-primary mb-2">Cadastrar Colete</button>
+        <button onClick={() => navigate('/inventory/add-coleteBalistico')} className="btn btn-primary mb-2">Cadastrar Colete</button>
 
         <table className={styles.table}>
             <thead>
@@ -62,7 +62,7 @@ const BulletproofVestList = () => {
                             <td>{vest.observation}</td>
 
                             <td className={styles.btAcao}>
-                                <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/editar-vest/${vest.id}`)}>
+                                <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/inventory/editar-vest/${vest.id}`)}>
                                     <FaPenClip className={styles.btEditar} />
                                 </button>
                                 <button title='excluir' onClick={() => deleteVest(vest.id)} className="btn btn-sm btn-danger me-md-2">

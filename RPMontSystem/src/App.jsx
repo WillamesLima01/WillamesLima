@@ -29,8 +29,8 @@ const AppContent = () => {
 
   const location = useLocation();  
   const path = location.pathname;
-  const isInventoryRoute = path.startsWith("/inventory/...");
-  const isVeterinaryRoute = path.includes("/veterinary/...");
+  const isInventoryRoute = path.startsWith("/inventory");
+  const isVeterinaryRoute = path.includes("/veterinary");
   console.log(path)
   console.log(isVeterinaryRoute)     
   console.log(isInventoryRoute) 
@@ -44,21 +44,21 @@ const AppContent = () => {
         <Routes>          
           <Route path="/" element={<Principal />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/listar-produtos" element={<HeritageMaterialList />} />
-          <Route path="/add-produto" element={<HeritageMaterialForm />} />
-          <Route path="/editar-produto/:id" element={<HeritageMaterialForm />} />
-          <Route path="/listar-coleteBalistico" element={<BulletproofVestList />} /> 
-          <Route path="/add-coleteBalistico" element={<BulletproofVestFrom />} />   
-          <Route path='/editar-vest/:id' element={<BulletproofVestFrom />} /> 
-          <Route path="/listar-pistola" element={<PistolGunList />} />      
-          <Route path="/add-pistola" element={<PistolGunForm />} />   
-          <Route path="/editar-pistola/:id" element={<PistolGunForm />} />
-          <Route path="/listar-armaLonga" element={<LongGunList />} />     
-          <Route path="/editar-armaLonga/:id" element={<LongGunForm />} />
-          <Route path="/add-armaLonga" element={<LongGunForm />} /> 
-          <Route path="/listar-equino" element={<EquineList />} /> 
-          <Route path="/add-equino" element={<EquineForm />} />
-          <Route path="/editar-equino/:id" element={<EquineForm />} />                   
+          <Route path="/inventory/listar-produtos" element={<HeritageMaterialList />} />
+          <Route path="/inventory/add-produto" element={<HeritageMaterialForm />} />
+          <Route path="/inventory/editar-produto/:id" element={<HeritageMaterialForm />} />
+          <Route path="/inventory/listar-coleteBalistico" element={<BulletproofVestList />} /> 
+          <Route path="/inventory/add-coleteBalistico" element={<BulletproofVestFrom />} />   
+          <Route path='/inventory/editar-vest/:id' element={<BulletproofVestFrom />} /> 
+          <Route path="/inventory/listar-pistola" element={<PistolGunList />} />      
+          <Route path="/inventory/add-pistola" element={<PistolGunForm />} />   
+          <Route path="/inventory/editar-pistola/:id" element={<PistolGunForm />} />
+          <Route path="/inventory/listar-armaLonga" element={<LongGunList />} />     
+          <Route path="/inventory/editar-armaLonga/:id" element={<LongGunForm />} />
+          <Route path="/inventory/add-armaLonga" element={<LongGunForm />} /> 
+          <Route path="/veterinary/listar-equino" element={<EquineList />} /> 
+          <Route path="/veterinary/add-equino" element={<EquineForm />} />
+          <Route path="/veterinar/editar-equino/:id" element={<EquineForm />} />                   
         </Routes>
       </div>
     </div>

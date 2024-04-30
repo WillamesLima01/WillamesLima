@@ -13,12 +13,12 @@ const Principal = () => {
                 </a>
 
                 <ul className="dropdown-menu"> {/* Substitua class por className aqui */}
-                    <li><Link className="dropdown-item" to="/listar-produtos">Inventário</Link></li> {/* Substitua class por className aqui */}
+                    <li><Link className="dropdown-item" to="/inventory/listar-produtos">Inventário</Link></li> {/* Substitua class por className aqui */}
                     <li><a className="dropdown-item" href="#">Fardamento</a></li>  {/* Substitua class por className aqui */}
                 </ul>
             </div>                 
                     
-            <Link to="/listar-equino">Seção Veterinária</Link>  
+            <Link to="/veterinary/listar-equino">Seção Veterinária</Link>  
             <Link to="/setor-ecoterapia">Ecoterapia</Link>                                
         </div>
     )
