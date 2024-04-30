@@ -1,0 +1,211 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "code": "00028375",
+      "description": "mesa em aço",
+      "observation": "produto com avaria",
+      "sectionProd": "P1"
+    },
+    {
+      "id": "2",
+      "code": "0002835",
+      "description": "mesa em aço",
+      "observation": "produto com avaria",
+      "sectionProd": "P1"
+    },
+    {
+      "id": "3",
+      "code": "0028375",
+      "description": "mesa em aço",
+      "observation": "produto com avaria",
+      "sectionProd": "P1"
+    },
+    {
+      "id": "4",
+      "code": "0002875",
+      "description": "mesa em aço",
+      "observation": "produto com avaria",
+      "sectionProd": "P1"
+    },
+    {
+      "id": "1adb",
+      "code": "000490196",
+      "description": "cadeira para escritório",
+      "observation": "sem informação",
+      "sectionProd": "P1"
+    },
+    {
+      "id": "70ab",
+      "code": "000490197",
+      "description": "cadeira para escritório",
+      "observation": "sem informação",
+      "sectionProd": "veterinária"
+    },
+    {
+      "id": "c7ac",
+      "code": "000475520",
+      "description": "Ar condicionado 12.000 btu's marca ELGIN",
+      "observation": "aparelho inverter",
+      "sectionProd": "P4"
+    },
+    {
+      "id": "5969",
+      "code": "004801274",
+      "description": "cadeira para escritório cor preta",
+      "observation": "armação de inox e forro em couro",
+      "sectionProd": "comando"
+    },
+    {
+      "id": "ffbf",
+      "code": "0004901900",
+      "description": "cadeira  em madeira",
+      "observation": "sem informação",
+      "sectionProd": "P3"
+    }
+  ],
+  "vests": [
+    {
+      "id": "1",
+      "code": "0102835",
+      "description": "colete balistico",
+      "type": "masculino",
+      "size": "G",
+      "validity": "2024-04-10",
+      "observation": "sem informação"
+    },
+    {
+      "id": "2",
+      "code": "0100035",
+      "description": "colete balistico",
+      "type": "masculino",
+      "size": "M",
+      "validity": "2021-06-01",
+      "observation": "sem informação"
+    },
+    {
+      "id": "3",
+      "code": "0183511",
+      "description": "colete balistico",
+      "type": "masculino",
+      "size": "G",
+      "validity": "2000-04-10",
+      "observation": "sem informação"
+    },
+    {
+      "id": "4",
+      "code": "01281435",
+      "description": "colete balistico",
+      "type": "masculino",
+      "size": "G",
+      "validity": "2020-04-19",
+      "observation": "colete cautelado"
+    }
+  ],
+  "guns": [
+    {
+      "id": "1",
+      "series": "00000001",
+      "description": "pistola",
+      "brand": "Taurus",
+      "caliber": ".40",
+      "charger": 3,
+      "observation": "sem informação"
+    },
+    {
+      "id": "2",
+      "series": "00000002",
+      "description": "pistola",
+      "brand": "Taurus",
+      "caliber": ".40",
+      "charger": 3,
+      "observation": "sem informação"
+    },
+    {
+      "id": "3",
+      "series": "00000003",
+      "description": "pistola",
+      "brand": "Taurus",
+      "caliber": ".40",
+      "charger": 3,
+      "observation": "sem informação"
+    },
+    {
+      "id": "71a1",
+      "series": "00458700",
+      "description": "Pistola",
+      "brand": "Taurus",
+      "caliber": ".40",
+      "charger": "3",
+      "observation": "sem informação"
+    }
+  ],
+  "longGuns": [
+    {
+      "id": "1",
+      "series": "00000001",
+      "description": "Fuzil",
+      "brand": "Taurus",
+      "caliber": "762",
+      "charger": 2,
+      "observation": "sem informação"
+    },
+    {
+      "id": "2",
+      "series": "00000002",
+      "description": "Fuzil",
+      "brand": "Rose",
+      "caliber": "556",
+      "charger": 1,
+      "observation": "sem informação"
+    },
+    {
+      "id": "3",
+      "series": "00000003",
+      "description": "SMT",
+      "brand": "Taurus",
+      "caliber": ".40",
+      "charger": 2,
+      "observation": "sem informação"
+    },
+    {
+      "id": "4",
+      "series": "00000004",
+      "description": "ParaFall",
+      "brand": "Taurus",
+      "caliber": "762",
+      "charger": "3",
+      "observation": "sem informação"
+    }
+  ],
+  "equines": [
+    {
+      "id": "1",
+      "name": "Garoto",
+      "birthDate": "2008-10-24",
+      "coat": "alazão",
+      "inclusion": "2012-10-01",
+      "record": "PMPB001234",
+      "local": "RPMont",
+      "sex": "macho",
+      "imagem1": "../../assets/imgChanfro.jpg",
+      "imagem2": "../../assets/imgLadoDireito.jpg",
+      "imagem3": "../../assets/imgLadoEsquerdo.jpg",
+      "imagem4": "../../assets/resenhaDescritiva.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Hamelet",
+      "birthDate": "2018-01-20",
+      "coat": "castanho",
+      "inclusion": "2012-10-01",
+      "record": "PMPB0012004",
+      "local": "RPMont",
+      "sex": "macho",
+      "imagem1": "../../assets/imgChanfro.jpg",
+      "imagem2": "../../assets/imgLadoDireito.jpg",
+      "imagem3": "../../assets/imgLadoEsquerdo.jpg",
+      "imagem4": "../../assets/resenhaDescritiva.jpg"
+    }
+  ]
+}

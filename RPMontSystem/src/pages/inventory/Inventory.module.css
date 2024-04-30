@@ -1,0 +1,86 @@
+.btEditar {
+    font-size: 1.2em;
+    color: white;     
+} 
+
+.btExcluir {
+    font-size: 1.2em;
+    color: white;    
+}
+
+.btAcao {     
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;       
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.btntb{
+    padding: 0;
+}
+
+.container{
+    max-width: 90%;   
+    margin: 30px auto;
+    padding: 25px;
+    background-color:rgb(240,248,255);
+    box-shadow: 0 0 10px rgba(88, 74, 74, 0.2);
+    border-radius: 8px;
+}
+
+
+.formgroup {
+    margin-bottom: 15px;
+}
+
+.formgroup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formgroup input, .formgroup textarea, .formgroup select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;    
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.formControl {    
+    border: 30px solid #128cea; 
+    box-shadow: 0 0 10px rgba(130, 181, 228, 0.3); 
+    background-color: rgb(228, 240, 250);  
+}
+
+.formControl:hover {    
+    border-color: #c6d8e6; 
+    box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
+}

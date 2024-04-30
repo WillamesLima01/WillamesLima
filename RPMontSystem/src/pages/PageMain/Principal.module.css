@@ -1,0 +1,23 @@
+
+.menu {
+    background-color: rgba(140, 137, 132, 0.6);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu a {
+    color: rgb(145, 7, 7);
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu a:hover, .menu a:focus {
+    color:  rgb(0, 8, 255);
+    border-radius: 4px;    
+}
