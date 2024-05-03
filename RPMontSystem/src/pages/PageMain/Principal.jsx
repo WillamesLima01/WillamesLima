@@ -19,7 +19,7 @@ const Principal = () => {
             </div>                 
                     
             <Link to="/veterinary/listar-equino">Seção Veterinária</Link>  
-            <Link to="/setor-ecoterapia">Ecoterapia</Link>                                
+            <Link to="/ecotherapy">Ecoterapia</Link>                                
         </div>
     )
 }

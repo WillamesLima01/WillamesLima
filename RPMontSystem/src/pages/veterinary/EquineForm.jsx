@@ -34,7 +34,7 @@ const EquineForm = () => {
         axios[method](url, equine)
         .then(() => {
             alert(`Dados ${id ? 'atualizado' : 'adicionado'} com sucesso!`);
-            navigate('/listar-equino');
+            navigate('/veterinary/listar-equino');
         })
         .catch(error => (console.error("Ocorreu um erro: ", error)))
     }

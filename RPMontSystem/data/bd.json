@@ -182,7 +182,7 @@
     {
       "id": "1",
       "name": "Garoto",
-      "birthDate": "2008-10-24",
+      "birthDate": "2024-05-03",
       "coat": "alazão",
       "inclusion": "2012-10-01",
       "record": "PMPB001234",
@@ -216,6 +216,17 @@
       "record": "PMPB00123567",
       "local": "RPMont",
       "sex": "femea"
+    }
+  ],
+  
+  "patients": [
+    {
+      "id": "1",
+      "name": "André Sousa da Silva",
+      "birthDate": "2008-10-24",
+      "contact": "(83) 98856-1123",      
+      "email": "PMPB001234",
+      "address": "RPMont"
     }
   ]
 }

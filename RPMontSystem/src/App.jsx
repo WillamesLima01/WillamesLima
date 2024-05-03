@@ -16,6 +16,8 @@ import Login from './pages/login/Login';
 import EquineList from './pages/veterinary/EquineList';
 import EquineForm from './pages/veterinary/EquineForm';
 import { useLocation } from 'react-router-dom';
+import PatientList from './pages/ecotherapy/PatientList';
+import Ecotherapy from './pages/ecotherapy/Ecotherapy';
 
 const App = () => {  
   return (
@@ -31,18 +33,18 @@ const AppContent = () => {
   const path = location.pathname;
   const isInventoryRoute = path.startsWith("/inventory");
   const isVeterinaryRoute = path.includes("/veterinary");
-  console.log(path)
-  console.log(isVeterinaryRoute)     
-  console.log(isInventoryRoute) 
+  const isEcotherapyRoute = path.includes("/ecotherapy");
+  
   return (
     <div> 
       
-      {isInventoryRoute && <NavBar />}
+      {isInventoryRoute  && <NavBar />}
+      {isEcotherapyRoute && <NavBar />}
       {isVeterinaryRoute && <NavBarVeterinary />}      
       
       <div className="container">
         <Routes>          
-          <Route path="/" element={<Principal />} />
+          <Route path="/" element={<Principal />} />          
           <Route path="/login" element={<Login />} />
           <Route path="/inventory/listar-produtos" element={<HeritageMaterialList />} />
           <Route path="/inventory/add-produto" element={<HeritageMaterialForm />} />
@@ -58,7 +60,9 @@ const AppContent = () => {
           <Route path="/inventory/add-armaLonga" element={<LongGunForm />} /> 
           <Route path="/veterinary/listar-equino" element={<EquineList />} /> 
           <Route path="/veterinary/add-equino" element={<EquineForm />} />
-          <Route path="/veterinar/editar-equino/:id" element={<EquineForm />} />                   
+          <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} />   
+          <Route path="/ecotherapy" element={<Ecotherapy />} />
+          <Route path="/ecotherapy/listar-pacientes" element={<PatientList />} />                
         </Routes>
       </div>
     </div>

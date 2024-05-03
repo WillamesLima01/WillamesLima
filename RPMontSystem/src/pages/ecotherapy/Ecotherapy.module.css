@@ -1,0 +1,144 @@
+.btEditar {
+    font-size: 1.2em;
+    color: white;     
+} 
+
+.btExcluir {
+    font-size: 1.2em;
+    color: white;    
+}
+
+.btAssistir {
+    font-size: 1.3em;
+    color: white;         
+} 
+
+.btAcao {     
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;       
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(245,245,220);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.btntb{
+    padding: 0;
+}
+
+.container{
+    max-width: 90%;   
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(143,188,143, 0.7);
+    box-shadow: 0 0 10px rgba(88, 74, 74, 0.1);
+    border-radius: 8px;
+}
+
+
+.formgroup {
+    margin-bottom: 15px;
+}
+
+.formgroup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formgroup input, .formgroup textarea, .formgroup select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;    
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(250, 250, 210, 0.5);
+}
+
+.formControl:hover {    
+    border-color: #c6d8e6; 
+    box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
+}
+
+.cabeca {
+    font-size: 30px;
+    margin-top: 0px;
+    align-items: center;
+    justify-items: center;
+    margin-left: 35%;    
+}
+
+.imagem {
+    width: 150px; /* Largura da imagem */
+    height: 130px; /* Altura da imagem */
+    /*object-fit: contain;  Ajusta a imagem mantendo as proporções */
+    margin: 10px; /* Margem entre as imagens */ 
+    display: flex;   
+    border: 1px solid rgb(49, 49, 230);   
+    margin-left: 15px;    
+}
+
+.galeria { 
+    display: flex;  
+    width: 90%;
+    flex-grow: 1; 
+    justify-content: space-between;     
+}
+
+.resenhadescritiva {
+    width: 100%;    
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;   
+}
+
+textarea {    
+    width: 100%; /* Largura total */    
+    height: 200px;
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 18px; /* Tamanho da fonte */    
+     
+}
+
+.etapa2 {
+    width: 100%;    
+    height: 50%;      
+}
+
+.formControl:hover {    
+    border-color: #16c909; 
+    box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
+}
+
+.botao {
+    margin-top: 20px; /* Aumenta a margem superior para distanciar o botão das imagens */
+}
+
+.form_control {
+    height: 200px !important;
+}
