@@ -219,13 +219,13 @@
     }
   ],
   
-  "patients": [
+  "practitioners": [
     {
       "id": "1",
       "name": "André Sousa da Silva",
       "birthDate": "2008-10-24",
       "contact": "(83) 98856-1123",      
-      "email": "PMPB001234",
+      "email": "andre@gmail.com",
       "address": "RPMont"
     }
   ]

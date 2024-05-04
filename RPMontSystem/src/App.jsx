@@ -16,8 +16,8 @@ import Login from './pages/login/Login';
 import EquineList from './pages/veterinary/EquineList';
 import EquineForm from './pages/veterinary/EquineForm';
 import { useLocation } from 'react-router-dom';
-import PatientList from './pages/ecotherapy/PatientList';
 import Ecotherapy from './pages/ecotherapy/Ecotherapy';
+import PractitionerList from './pages/ecotherapy/PractitionerList';
 
 const App = () => {  
   return (
@@ -62,7 +62,7 @@ const AppContent = () => {
           <Route path="/veterinary/add-equino" element={<EquineForm />} />
           <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} />   
           <Route path="/ecotherapy" element={<Ecotherapy />} />
-          <Route path="/ecotherapy/listar-pacientes" element={<PatientList />} />                
+          <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} />                
         </Routes>
       </div>
     </div>
