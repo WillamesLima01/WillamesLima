@@ -216,15 +216,24 @@
       "record": "PMPB00123567",
       "local": "RPMont",
       "sex": "femea"
+    },
+    {
+      "id": "a4e9",
+      "name": "Inca",
+      "birthDate": "2023-01-09",
+      "coat": "castanho escuro",
+      "inclusion": "PM09052024",
+      "record": "PMPB0012356700000",
+      "local": "3º EPMont",
+      "sex": "femea"
     }
   ],
-  
   "practitioners": [
     {
       "id": "1",
       "name": "André Sousa da Silva",
       "birthDate": "2008-10-24",
-      "contact": "(83) 98856-1123",      
+      "contact": "(83) 98856-1123",
       "email": "andre@gmail.com",
       "address": "RPMont"
     }

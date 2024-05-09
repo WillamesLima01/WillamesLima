@@ -7,7 +7,7 @@ import styles from './NavBar.module.css';
 const NavBarVeterinary = () => {
 
     const location = useLocation();    
-    const retorno = location.pathname === "/veterinary/add-equino"? "/veterinary/listar-equino": "/";
+    const retorno = location.pathname === "/veterinary/add-equino" || "/veterinary/assitir-equino:id"? "/veterinary/listar-equino": "/";
     // Definindo a rota de retorno estática
     //const retorno = "/"; // Defina a rota desejada aqui
 

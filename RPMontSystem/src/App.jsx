@@ -18,6 +18,7 @@ import EquineForm from './pages/veterinary/EquineForm';
 import { useLocation } from 'react-router-dom';
 import Ecotherapy from './pages/ecotherapy/Ecotherapy';
 import PractitionerList from './pages/ecotherapy/PractitionerList';
+import EquineWatch from './pages/veterinary/EquineWatch';
 
 const App = () => {  
   return (
@@ -60,7 +61,7 @@ const AppContent = () => {
           <Route path="/inventory/add-armaLonga" element={<LongGunForm />} /> 
           <Route path="/veterinary/listar-equino" element={<EquineList />} /> 
           <Route path="/veterinary/add-equino" element={<EquineForm />} />
-          <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} />   
+          <Route path="/veterinary/assistir-equino/:id" element={<EquineWatch />} />  
           <Route path="/ecotherapy" element={<Ecotherapy />} />
           <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} />                
         </Routes>

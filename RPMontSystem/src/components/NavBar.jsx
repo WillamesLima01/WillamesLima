@@ -10,7 +10,7 @@ const NavBar = () => {
     const isInventoryRoute = path.startsWith("/inventory");
     const isEcotherapyRoute = path.startsWith("/ecotherapy");      
     const retorno = location === "/ecotherapy/add-practitioners"? "/ecotherapy/listar-practitioners": "/ecotherapy";
-    alert(retorno)
+    
     // Função para renderizar os links com base nas rotas
     const renderLinks = () => {
         if (isInventoryRoute) {
@@ -27,8 +27,10 @@ const NavBar = () => {
             return (
                 <React.Fragment>                    
                     <Link to="/ecotherapy/listar-practitioners" className={styles.menuLink}>Listar Praticantes</Link>
-                    <Link to="/ecotherapy/listar-colaboradores" className={styles.menuLink}>Listar Colaboradores</Link>
-                    <Link to="/ecotherapy/relatorio" className={styles.menuLink}>Relatório</Link>                    
+                    <Link to="/ecotherapy/listar-profissionais" className={styles.menuLink}>Listar Profissionais</Link>
+                    <Link to="/ecotherapy/relatorio" className={styles.menuLink}>Relatório</Link>  
+                    <Link to="/ecotherapy/consultar-praticante" className={styles.menuLink}>Consultar Praticante</Link>
+                    <Link to="/ecotherapy/consultar-profissional" className={styles.menuLink}>Consultar Profissional</Link>                    
                     <Link to="/"><FaHome title='Início' className={styles.csImg}/></Link>
                     <Link to={retorno}><GiReturnArrow  title='Retornar' className={styles.retornoImg}/></Link> 
                 </React.Fragment>

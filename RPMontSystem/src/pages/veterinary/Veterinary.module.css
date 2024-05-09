@@ -41,7 +41,12 @@ body{
 }
 
 
-.formgroup {
+.formgroupservice {
+    text-align: left;
+    width: 100%;    
+}
+
+formgroup {
     margin-bottom: 15px;
 }
 
@@ -85,12 +90,15 @@ body{
 }
 
 .cabeca {
-    font-size: 30px;
-    margin-top: 0px;
-    align-items: center;
-    justify-items: center;
-    margin-left: 35%;    
-}
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #3366ff; /* Você pode substituir pelo código de cor desejado */
+    font-size: 24px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  }  
 
 .imagem {
     width: 150px; /* Largura da imagem */
@@ -114,6 +122,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 18px;   
+    margin-top: 2%;
 }
 
 textarea {    
@@ -141,4 +150,29 @@ textarea {
 
 .form_control {
     height: 200px !important;
+}
+
+.equineData {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+    margin-top: 3%;    
+    margin-left: 15%;    
+    border-radius: 5px; 
+
+}
+
+.styloData {
+    
+    
+    margin-top: 5%;    
+    background-color: rgba(250, 250, 210, 0.4);
+    border: 1px solid rgba(250, 229, 210, 0.5); 
+    border-radius: 5px; 
+}
+
+.corFonte {
+    color: white;
 }
