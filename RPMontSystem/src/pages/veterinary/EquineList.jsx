@@ -51,6 +51,7 @@ const EquineList = () => {
                     <th>Registro</th>
                     <th>Local</th>
                     <th>Sexo</th>
+                    <th>Situação</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -65,6 +66,7 @@ const EquineList = () => {
                             <td>{equine.record}</td>
                             <td>{equine.local}</td>
                             <td>{equine.sex}</td>
+                            <td>{equine.situation}</td>
 
                             <td className={styles.btAcao}>
                                 <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/veterinary/editar-equino/${equine.id}`)}>

@@ -32,7 +32,7 @@ body{
 }
 
 .container{
-    max-width: 90%;   
+    max-width: 95%;   
     margin: 30px auto;
     padding: 25px;
     background-color: rgba(143,188,143, 0.7);
@@ -139,6 +139,10 @@ textarea {
     height: 50%;      
 }
 
+.etapa1 {
+    margin-top: 5%;
+}
+
 .formControl:hover {    
     border-color: #16c909; 
     box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
@@ -160,8 +164,7 @@ textarea {
     padding: 0 20px;
     margin-top: 3%;    
     margin-left: 15%;    
-    border-radius: 5px; 
-
+    border-radius: 5px;     
 }
 
 .styloData {
@@ -174,5 +177,5 @@ textarea {
 }
 
 .corFonte {
-    color: white;
+    color: rgb(49, 63, 249);
 }

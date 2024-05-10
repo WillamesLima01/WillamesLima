@@ -5,7 +5,7 @@ import axios from '../../api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const EquineForm = () => {
-    const [equine, setEquine] = useState({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: ''});
+    const [equine, setEquine] = useState({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: '', situation: ''});
     const navigate = useNavigate();
     const { id } = useParams();
 
@@ -88,6 +88,17 @@ const EquineForm = () => {
                     <option value="femea">Fêmea</option>
                 </select>
             </div>
+
+            <div className={styles.formgroup}>
+                <label htmlFor="situation">Situação</label>
+                <select id="situation" name="situation" className={styles.formControl} value={equine.situation} onChange={handleChange} required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Em atividade">Em atividade</option>
+                    <option value="Em tratamento">Em tratamento</option>
+                    <option value="Baixado">Baixado</option>
+                </select>
+            </div>
+
         </section>
 
         <div className={styles.botao}>

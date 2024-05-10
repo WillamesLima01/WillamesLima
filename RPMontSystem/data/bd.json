@@ -188,6 +188,7 @@
       "record": "PMPB001234",
       "local": "RPMont",
       "sex": "macho",
+      "situation": "ativo",
       "imagem1": "../../assets/imgChanfro.jpg",
       "imagem2": "../../assets/imgLadoDireito.jpg",
       "imagem3": "../../assets/imgLadoEsquerdo.jpg",
@@ -202,6 +203,7 @@
       "record": "PMPB0012004",
       "local": "RPMont",
       "sex": "macho",
+      "situation": "ativo",
       "imagem1": "../../assets/imgChanfro.jpg",
       "imagem2": "../../assets/imgLadoDireito.jpg",
       "imagem3": "../../assets/imgLadoEsquerdo.jpg",
@@ -215,7 +217,8 @@
       "inclusion": "2012-10-01",
       "record": "PMPB00123567",
       "local": "RPMont",
-      "sex": "femea"
+      "sex": "femea",
+      "situation": "ativo"
     },
     {
       "id": "a4e9",
@@ -225,9 +228,11 @@
       "inclusion": "PM09052024",
       "record": "PMPB0012356700000",
       "local": "3º EPMont",
-      "sex": "femea"
+      "sex": "femea",
+      "situation": "ativo"
     }
   ],
+
   "practitioners": [
     {
       "id": "1",
@@ -236,6 +241,26 @@
       "contact": "(83) 98856-1123",
       "email": "andre@gmail.com",
       "address": "RPMont"
+    }
+  ],
+
+  "equineService": [
+    {
+      "id": "1",      
+      "Description": "chanfro",
+      "equineId": "chanfro"      
+    }
+  ],
+
+  "descriptiveReview": [
+    {
+      "id": "1",      
+      "image1": "chanfro",
+      "image2": "chanfro",
+      "image3": "chanfro",
+      "image4": "chanfro",
+      "description": "bladadfadfa",
+      "equineId": "chanfro"
     }
   ]
 }

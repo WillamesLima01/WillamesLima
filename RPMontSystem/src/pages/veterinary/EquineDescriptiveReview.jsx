@@ -3,18 +3,24 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import axios from '../../api';
 import { useParams } from "react-router-dom";
+import imgChanfro from '../../assets/imgChanfro.jpg';
+import imgLadoDireito from '../../assets/imgLadoDireito.jpg';
+import imgLadoEsquerdo from '../../assets/imgLadoEsquerdo.jpg';
+import resenhaDescritiva from '../../assets/resenhaDescritiva.jpg';
 import styles from './Veterinary.module.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const EquineWatch = () => {
+const EquineDescriptiveReview = () => {
     const [equine, setEquine] = useState({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: '', situation: ''});
-    const [descricao, setDescricao] = useState('');    
+    const [equineImage, setEquineImage] = useState({imagem1: '', imagem2: '', imagem3: '', imagem4: ''});    
+    const [description, setDescription] = useState(''); 
     const navigate = useNavigate();
     const { id } = useParams();
 
     useEffect(() => {
         axios.get(`/equines/${id}`)
         .then(Response => {
-            setEquine(Response.data)
+            setEquineImage(Response.data)
         })
         .catch(error => console.error('Ocorreu um erro: ', error));
     }, [id]);  
@@ -39,6 +45,27 @@ const EquineWatch = () => {
             navigate('/veterinary/listar-equino');
         })
         .catch(error => (console.error("Ocorreu um erro: ", error)))
+    }
+
+    function handleImageClick(event) {
+        const imgName = event.target.name;
+
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = 'image/*';
+
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                setEquine(prevState => ({ ...prevState, [imgName]: e.target.result }));
+            };
+
+            reader.readAsDataURL(file);
+        };
+
+        input.click();
     }
    
     return (
@@ -91,6 +118,30 @@ const EquineWatch = () => {
 
                         </div>
                     </div>
+
+                    <section className={styles.etapa2}>            
+
+                        <p>Obs: Click na imagem para adicionar</p> 
+                        
+                        <div className={styles.galeria}>  
+                        
+                            <span>
+                                <img id='imagem1' name='imagem1' className={styles.imagem} src={equine.imagem1 || imgChanfro} alt='foto 1' onClick={handleImageClick} />
+                            </span>
+                            
+                            <span>
+                                <img id='imagem2' name='imagem2' className={styles.imagem} src={equine.imagem2 || imgLadoDireito} alt='foto 2' onClick={handleImageClick} />
+                            </span>
+                                            
+                            <span>
+                                <img id='imagem3' name='imagem3' className={styles.imagem} src={equine.imagem3 || imgLadoEsquerdo} alt='foto 3' onClick={handleImageClick} />
+                            </span>
+                            <span>
+                                <img id='imagem4' name='imagem4' className={styles.imagem} src={equine.imagem4 || resenhaDescritiva} alt='foto 4' onClick={handleImageClick} />
+                            </span>                     
+                        </div>
+                                
+                    </section>
     
                     <div className={styles.resenhadescritiva}>
                         <label htmlFor="descricao" className= {styles.corFonte}>Descrição do Atendimento</label>
@@ -114,4 +165,4 @@ const EquineWatch = () => {
     );
 }
 
-export default EquineWatch
+export default EquineDescriptiveReview
