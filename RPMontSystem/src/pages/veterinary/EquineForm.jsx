@@ -17,7 +17,7 @@ const EquineForm = () => {
             })
             .catch(error => console.error("Erro ao buscar dados equino", error));
         } else {
-            setEquine({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: ''});
+            setEquine({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: '', situation: ''});
         }       
     }, [id]);
 
@@ -65,7 +65,7 @@ const EquineForm = () => {
                 <label htmlFor="inclusion">Inclusão</label>
                 <input type='text' className={styles.formControl} id="inclusion" name="inclusion" value={equine.inclusion} onChange={handleChange} required />
             </div>
-              
+            
             <div className={styles.formgroup}>
                 <label htmlFor="record">Registro</label>
                 <input type='text' className={styles.formControl} id="record" name="record" value={equine.record} onChange={handleChange} required />
@@ -74,7 +74,7 @@ const EquineForm = () => {
             <div className={styles.formgroup}>
                 <label htmlFor="local">Local</label>
                 <select id="local" name="local" className={styles.formControl} value={equine.local} onChange={handleChange} required>
-                    <option selected disabled value="">Selecione</option>
+                    <option disabled value="">Selecione</option>
                     <option value="RPMont">RPMont</option>
                     <option value="3º EPMont">3º EPMont</option>
                 </select>
@@ -83,7 +83,7 @@ const EquineForm = () => {
             <div className={styles.formgroup}>
                 <label htmlFor="sex">Sexo</label>
                 <select id="sex" name="sex" className={styles.formControl} value={equine.sex} onChange={handleChange} required>
-                    <option selected disabled value="">Selecione</option>
+                    <option disabled value="">Selecione</option>
                     <option value="macho">Macho</option>
                     <option value="femea">Fêmea</option>
                 </select>
@@ -92,14 +92,14 @@ const EquineForm = () => {
             <div className={styles.formgroup}>
                 <label htmlFor="situation">Situação</label>
                 <select id="situation" name="situation" className={styles.formControl} value={equine.situation} onChange={handleChange} required>
-                    <option selected disabled value="">Selecione</option>
+                    <option disabled value="">Selecione</option>
                     <option value="Em atividade">Em atividade</option>
                     <option value="Em tratamento">Em tratamento</option>
                     <option value="Baixado">Baixado</option>
                 </select>
             </div>
-
         </section>
+
 
         <div className={styles.botao}>
             <button type="submit" className={`btn btn-success me-md-2`}>{id ? 'Editar' : 'Salvar'} dados</button>           

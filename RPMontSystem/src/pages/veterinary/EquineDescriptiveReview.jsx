@@ -11,41 +11,34 @@ import styles from './Veterinary.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const EquineDescriptiveReview = () => {
-    const [equine, setEquine] = useState({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: '', situation: ''});
-    const [equineImage, setEquineImage] = useState({imagem1: '', imagem2: '', imagem3: '', imagem4: ''});    
+    const [equine, setEquine] = useState({ name: '', birthDate: '', coat: '', inclusion: '', record: '', local: '', sex: '', situation: '', imagem1: '', imagem2: '', imagem3: '', imagem4: '', descricao: '' });       
     const [description, setDescription] = useState(''); 
     const navigate = useNavigate();
     const { id } = useParams();
-
+    
     useEffect(() => {
         axios.get(`/equines/${id}`)
         .then(Response => {
-            setEquineImage(Response.data)
+            setEquine(Response.data)
         })
         .catch(error => console.error('Ocorreu um erro: ', error));
-    }, [id]);  
-
+    }, [id]);    
+    
     function handleChange(event) {
         const { name, value } = event.target
-        if (name === "descricao") {
-            setDescricao(value);
-        } else {
-            setEquine(prevState => ({ ...prevState, [name]: value }));
-        }
+        setEquine(prevState => ({ ...prevState, [name]: value }));
     }
 
     function handleSubmit(event) {
-        event.preventDefault();
-        const method = 'post';
-        const url = `/equines/${id}`
+        event.preventDefault();       
 
-        axios[method](url, equine)
+        axios.post(`/equines/${id}`, equine)
         .then(() => {
             alert('adicionado com sucesso!');
             navigate('/veterinary/listar-equino');
         })
         .catch(error => (console.error("Ocorreu um erro: ", error)))
-    }
+    }    
 
     function handleImageClick(event) {
         const imgName = event.target.name;
@@ -71,7 +64,7 @@ const EquineDescriptiveReview = () => {
     return (
         <>
             <div className={`${styles.container} mt-5`}>
-                <h1 className={styles.cabeca}>Atendimento</h1>
+                <h1 className={styles.cabeca}>Resenha Descritiva</h1>
     
                 <section >
                     <div className= {styles.styloData}>
@@ -144,13 +137,13 @@ const EquineDescriptiveReview = () => {
                     </section>
     
                     <div className={styles.resenhadescritiva}>
-                        <label htmlFor="descricao" className= {styles.corFonte}>Descrição do Atendimento</label>
+                        <label htmlFor="description" className= {styles.corFonte}>Descrição da resenha</label>
                         <textarea 
                             id="descricao" 
                             name="descricao" 
                             rows="7" 
                             cols="10" 
-                            value={descricao} 
+                            value={description} 
                             onChange={handleChange}
                         />
                     </div>  
@@ -158,7 +151,7 @@ const EquineDescriptiveReview = () => {
     
                 <div className={styles.botao}>
                     <button type="submit" className={`btn btn-success me-md-2`}>Salvar dados</button>
-                </div>
+                </div>                
     
             </div>
         </>

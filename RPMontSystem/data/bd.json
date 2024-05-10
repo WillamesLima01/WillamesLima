@@ -188,11 +188,7 @@
       "record": "PMPB001234",
       "local": "RPMont",
       "sex": "macho",
-      "situation": "ativo",
-      "imagem1": "../../assets/imgChanfro.jpg",
-      "imagem2": "../../assets/imgLadoDireito.jpg",
-      "imagem3": "../../assets/imgLadoEsquerdo.jpg",
-      "imagem4": "../../assets/resenhaDescritiva.jpg"
+      "situation": "Em atividade"
     },
     {
       "id": "2",
@@ -203,11 +199,7 @@
       "record": "PMPB0012004",
       "local": "RPMont",
       "sex": "macho",
-      "situation": "ativo",
-      "imagem1": "../../assets/imgChanfro.jpg",
-      "imagem2": "../../assets/imgLadoDireito.jpg",
-      "imagem3": "../../assets/imgLadoEsquerdo.jpg",
-      "imagem4": "../../assets/resenhaDescritiva.jpg"
+      "situation": "Em atividade"
     },
     {
       "id": "1afc",
@@ -218,7 +210,7 @@
       "record": "PMPB00123567",
       "local": "RPMont",
       "sex": "femea",
-      "situation": "ativo"
+      "situation": "Em atividade"
     },
     {
       "id": "a4e9",
@@ -229,10 +221,20 @@
       "record": "PMPB0012356700000",
       "local": "3º EPMont",
       "sex": "femea",
-      "situation": "ativo"
+      "situation": "Em atividade"
+    },
+    {
+      "id": "949d",
+      "name": "Golias",
+      "birthDate": "2020-03-05",
+      "coat": "castanho",
+      "inclusion": "12/09/2024",
+      "record": "PMPB0010098ui8asdf",
+      "local": "3º EPMont",
+      "sex": "macho",
+      "situation": "Em tratamento"
     }
   ],
-
   "practitioners": [
     {
       "id": "1",
@@ -243,18 +245,16 @@
       "address": "RPMont"
     }
   ],
-
   "equineService": [
     {
-      "id": "1",      
+      "id": "1",
       "Description": "chanfro",
-      "equineId": "chanfro"      
+      "equineId": "chanfro"
     }
   ],
-
   "descriptiveReview": [
     {
-      "id": "1",      
+      "id": "1",
       "image1": "chanfro",
       "image2": "chanfro",
       "image3": "chanfro",

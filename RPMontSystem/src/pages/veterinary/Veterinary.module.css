@@ -101,8 +101,8 @@ formgroup {
   }  
 
 .imagem {
-    width: 150px; /* Largura da imagem */
-    height: 130px; /* Altura da imagem */
+    width: 150px; 
+    height: 130px; 
     /*object-fit: contain;  Ajusta a imagem mantendo as proporções */
     margin: 10px; /* Margem entre as imagens */ 
     display: flex;   
@@ -114,7 +114,8 @@ formgroup {
     display: flex;  
     width: 90%;
     flex-grow: 1; 
-    justify-content: space-between;     
+    justify-content: space-between;
+    margin-left: 5%;     
 }
 
 .resenhadescritiva {
@@ -136,7 +137,8 @@ textarea {
 
 .etapa2 {
     width: 100%;    
-    height: 50%;      
+    height: 50%;  
+    margin-top: 2%;    
 }
 
 .etapa1 {
@@ -158,12 +160,12 @@ textarea {
 
 .equineData {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
     padding: 0 20px;
-    margin-top: 3%;    
-    margin-left: 15%;    
+    margin-top: 1%;    
+    margin-left: 10%;    
     border-radius: 5px;     
 }
 

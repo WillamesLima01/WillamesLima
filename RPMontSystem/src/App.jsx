@@ -19,6 +19,7 @@ import { useLocation } from 'react-router-dom';
 import Ecotherapy from './pages/ecotherapy/Ecotherapy';
 import PractitionerList from './pages/ecotherapy/PractitionerList';
 import EquineWatch from './pages/veterinary/EquineWatch';
+import EquineDescriptiveReview from './pages/veterinary/EquineDescriptiveReview';
 
 const App = () => {  
   return (
@@ -62,6 +63,8 @@ const AppContent = () => {
           <Route path="/veterinary/listar-equino" element={<EquineList />} /> 
           <Route path="/veterinary/add-equino" element={<EquineForm />} />
           <Route path="/veterinary/assistir-equino/:id" element={<EquineWatch />} />  
+          <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} /> 
+          <Route path='/veterinary/resenha-equino/:id' element={<EquineDescriptiveReview />} />
           <Route path="/ecotherapy" element={<Ecotherapy />} />
           <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} />                
         </Routes>
