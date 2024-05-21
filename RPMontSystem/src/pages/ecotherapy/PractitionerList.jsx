@@ -1,6 +1,7 @@
 import axios from '../../api';
 import React, { useEffect, useState } from 'react'
-import { FaPenClip } from 'react-icons/fa6';
+import { FaPenClip, FaPenToSquare } from 'react-icons/fa6';
+import { TbListDetails } from "react-icons/tb";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import styles from './Ecotherapy.module.css';
@@ -51,7 +52,7 @@ const PractitionerList = () => {
                     <th>Data nascimento</th>
                     <th>Contato</th>
                     <th>Email</th>
-                    <th>Endereço</th>
+                    <th>Responsável</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -63,13 +64,20 @@ const PractitionerList = () => {
                             <td>{formatData(practitioner.birthDate)}</td>
                             <td>{practitioner.contact}</td>
                             <td>{practitioner.email}</td>
-                            <td>{practitioner.address}</td>
+                            <td>{practitioner.responsible}</td>                            
+                            <td>{`${practitioner.practitionerAddressResponse.street}, ${practitioner.practitionerAddressResponse.number} - ${practitioner.practitionerAddressResponse.neighborhood}, ${practitioner.practitionerAddressResponse.city}, ${practitioner.practitionerAddressResponse.state}, ${practitioner.practitionerAddressResponse.country}`}</td>
                             <td className={styles.btAcao}>
                                 <button title='editar' className='btn btn-sm btn-warning me-md-2' onClick={() => navigate(`/ecotherapy/editar-practitioner/${practitioner.id}`)}>
                                     <FaPenClip className={styles.btEditar} />
                                 </button>
                                 <button title='excluir' onClick={() => deletePractitioner(practitioner.id)} className="btn btn-sm btn-danger me-md-2">
                                             <FaRegTrashAlt className={styles.btExcluir}/>                                    
+                                </button>
+                                <button title='assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/veterinary/assistir-equino/${equine.id}`)}>
+                                    <FaPenToSquare className={styles.btAssistir} />
+                                </button>
+                                <button title='detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/veterinary/resenha-equino/${equine.id}`)}>
+                                    <TbListDetails className={styles.btAssistir} />
                                 </button>
                             </td>
                         </tr>

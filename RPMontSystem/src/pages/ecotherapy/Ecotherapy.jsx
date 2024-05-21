@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Ecotherapy.module.css'
 
 const Ecotherapy = () => {
   return (
-    <div>
+    <div className={styles.containerMain}>
       <h1>tela ecoterapia</h1>
     </div>
   )

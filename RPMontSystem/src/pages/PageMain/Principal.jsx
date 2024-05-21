@@ -1,27 +1,47 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Principal.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import styles from './Principal.module.css'; 
 
-const Principal = () => {    
+const Principal = () => {
     return (
-        <div className={styles.menu}>            
-           <div className="dropdown"> {/* Substitua class por className aqui */}
-                <a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    P4
-                </a>
-
-                <ul className="dropdown-menu"> {/* Substitua class por className aqui */}
-                    <li><Link className="dropdown-item" to="/inventory/listar-produtos">Inventário</Link></li> {/* Substitua class por className aqui */}
-                    <li><a className="dropdown-item" href="#">Fardamento</a></li>  {/* Substitua class por className aqui */}
-                </ul>
-            </div>                 
-                    
-            <Link to="/veterinary/listar-equino">Seção Veterinária</Link>  
-            <Link to="/ecotherapy">Ecoterapia</Link>                                
+        <div className={styles.container}>           
+            <div className={styles.menu}>                 
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-button']}>
+                        Seção P4
+                    </button>
+                    <div className={styles['dropdown-content']}>
+                        <Link className={styles['dropdown-item']} to="/inventory/listar-produtos">Inventário</Link>
+                        <a className={styles['dropdown-item']} href="#">Fardamentos</a>
+                        <a className={styles['dropdown-item']} href="#">Usuários</a>
+                        <a className={styles['dropdown-item']} href="#">Relatório</a>
+                    </div>
+                </div>
+                
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-button']}>
+                        Seção Veterinária
+                    </button>
+                    <div className={styles['dropdown-content']}>
+                        <Link className={styles['dropdown-item']} to="/veterinary/listar-equino">Equinos</Link>
+                        <a className={styles['dropdown-item']} href="#">Usuários</a>
+                        <a className={styles['dropdown-item']} href="#">Relatório</a>
+                    </div>
+                </div>
+                
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-button']}>
+                        Ecoterapia
+                    </button>
+                    <div className={styles['dropdown-content']}>
+                        <Link className={styles['dropdown-item']} to="/ecotherapy">Praticantes</Link>
+                        <a className={styles['dropdown-item']} href="#">Usuários</a>
+                        <a className={styles['dropdown-item']} href="#">Relatório</a>
+                    </div>
+                </div>             
+            </div>             
         </div>
-    )
+    );
 }
 
-export default Principal;
+export default Principal

@@ -235,16 +235,6 @@
       "situation": "Em tratamento"
     }
   ],
-  "practitioners": [
-    {
-      "id": "1",
-      "name": "André Sousa da Silva",
-      "birthDate": "2008-10-24",
-      "contact": "(83) 98856-1123",
-      "email": "andre@gmail.com",
-      "address": "RPMont"
-    }
-  ],
   "equineService": [
     {
       "id": "1",
@@ -261,6 +251,23 @@
       "image4": "chanfro",
       "description": "bladadfadfa",
       "equineId": "chanfro"
+    }
+  ],
+  "practitioners": [
+    {
+      "id": "1",
+      "name": "André Sousa da Silva",
+      "birthDate": "2008-10-24",
+      "contact": "(83) 98856-1123",
+      "email": "andre@gmail.com",
+      "responsible": "José Maria",      
+      "zipcode": "58079000",
+      "street": "Rua Josefa Miranda Freire",
+      "number": "105",
+      "neighborhood": "Jardim Oceania",
+      "city": "João Pessoa",
+      "state": "Paraíba",
+      "country": "Brasil"
     }
   ]
 }

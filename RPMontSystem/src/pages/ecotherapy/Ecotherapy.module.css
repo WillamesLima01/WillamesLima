@@ -142,3 +142,14 @@ textarea {
 .form_control {
     height: 200px !important;
 }
+
+.containerMain {
+    background-image: url('../../assets/eco2.jpg');
+    background-size: contain; /* Ajuste para manter a proporção da imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center;
+    width: 50%;
+    height: 50vh; 
+    position: relative; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
