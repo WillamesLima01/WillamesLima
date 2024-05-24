@@ -20,6 +20,7 @@ import Ecotherapy from './pages/ecotherapy/Ecotherapy';
 import PractitionerList from './pages/ecotherapy/PractitionerList';
 import EquineWatch from './pages/veterinary/EquineWatch';
 import EquineDescriptiveReview from './pages/veterinary/EquineDescriptiveReview';
+import PractitionerForm from './pages/ecotherapy/PractitionerForm';
 
 const App = () => {  
   return (
@@ -66,7 +67,9 @@ const AppContent = () => {
           <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} /> 
           <Route path='/veterinary/resenha-equino/:id' element={<EquineDescriptiveReview />} />
           <Route path="/ecotherapy" element={<Ecotherapy />} />
-          <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} />                
+          <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} /> 
+          <Route path='/ecotherapy/add-practitioner' element={<PractitionerForm />} />  
+          <Route path='/ecotherapy/editar-practitioner/:id' element={<PractitionerForm />} />              
         </Routes>
       </div>
     </div>

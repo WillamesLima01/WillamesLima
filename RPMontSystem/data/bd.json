@@ -255,19 +255,58 @@
   ],
   "practitioners": [
     {
-      "id": "1",
       "name": "André Sousa da Silva",
       "birthDate": "2008-10-24",
       "contact": "(83) 98856-1123",
       "email": "andre@gmail.com",
-      "responsible": "José Maria",      
-      "zipcode": "58079000",
-      "street": "Rua Josefa Miranda Freire",
-      "number": "105",
-      "neighborhood": "Jardim Oceania",
-      "city": "João Pessoa",
-      "state": "Paraíba",
-      "country": "Brasil"
+      "education": "2 ano",
+      "responsible": "José Maria",
+      "practitionerAddressRequest": {
+        "zipcode": "58079000",
+        "street": "Rua Josefa Miranda Freire",
+        "number": "105",
+        "neighborhood": "Jardim Oceania",
+        "city": "João Pessoa",
+        "state": "Paraíba",
+        "country": "Brasil"
+      },
+      "id": "1"
+    },
+    {
+      "id": "21ad",
+      "name": "José Maria da Silva",
+      "birthDate": "1991-04-10",
+      "contact": "83999743455",
+      "email": "Mariasilva@gmail.com",
+      "education": "3 ano",
+      "responsible": "José da silva Júnior",
+      "practitionerAddressRequest": {
+        "zipcode": "58140-970",
+        "street": "Rua São José",
+        "number": "001",
+        "neighborhood": "Centro",
+        "city": "Areial",
+        "state": "PB",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "16b9",
+      "name": "Alexsandro Gomes da silva",
+      "birthDate": "2024-04-30",
+      "contact": "83999743467",
+      "email": "agomes@hotmail.com",
+      "education": "2 ano",
+      "responsible": "Alecsandra Gomes da Silva",
+      "practitionerAddressRequest": {
+        "zipcode": "58140-000",
+        "street": "pombal",
+        "number": "345",
+        "neighborhood": "areia",
+        "city": "Areial",
+        "state": "PB",
+        "country": "Brasil"
+      }
     }
   ]
 }
