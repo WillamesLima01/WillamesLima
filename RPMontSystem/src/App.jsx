@@ -21,6 +21,7 @@ import PractitionerList from './pages/ecotherapy/PractitionerList';
 import EquineWatch from './pages/veterinary/EquineWatch';
 import EquineDescriptiveReview from './pages/veterinary/EquineDescriptiveReview';
 import PractitionerForm from './pages/ecotherapy/PractitionerForm';
+import PractitionerDetailsData from './pages/ecotherapy/PractitionerDetailsData';
 
 const App = () => {  
   return (
@@ -69,7 +70,8 @@ const AppContent = () => {
           <Route path="/ecotherapy" element={<Ecotherapy />} />
           <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} /> 
           <Route path='/ecotherapy/add-practitioner' element={<PractitionerForm />} />  
-          <Route path='/ecotherapy/editar-practitioner/:id' element={<PractitionerForm />} />              
+          <Route path='/ecotherapy/editar-practitioner/:id' element={<PractitionerForm />} />   
+          <Route path='/ecotherapy/dados-practitioner/:id' element={<PractitionerDetailsData />} />            
         </Routes>
       </div>
     </div>

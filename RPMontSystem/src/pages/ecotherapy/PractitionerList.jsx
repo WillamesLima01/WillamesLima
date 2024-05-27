@@ -79,7 +79,7 @@ const PractitionerList = () => {
                                     <button title='Assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/veterinary/assistir-equino/${practitioner.id}`)}>
                                         <FaPenToSquare className={styles.btAssistir} />
                                     </button>
-                                    <button title='Detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/veterinary/resenha-equino/${practitioner.id}`)}>
+                                    <button title='Detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/ecotherapy/dados-practitioner/${practitioner.id}`)}>
                                         <TbListDetails className={styles.btAssistir} />
                                     </button>
                                 </td>
