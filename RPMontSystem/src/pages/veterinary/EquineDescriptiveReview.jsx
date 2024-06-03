@@ -64,8 +64,7 @@ const EquineDescriptiveReview = () => {
     return (
         <>
             <div className={`${styles.container} mt-5`}>
-                <h1 className={styles.cabeca}>Resenha Descritiva</h1>
-    
+                <h1 className={styles.cabeca}>Resenha Descritiva</h1>    
                 <section >
                     <div className= {styles.styloData}>
                         <div className= {styles.equineData}>

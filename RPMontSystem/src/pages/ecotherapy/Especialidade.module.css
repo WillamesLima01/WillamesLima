@@ -1,0 +1,54 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(252, 252, 252);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.formgrup{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10%;
+  border: 1px solid #000000;
+}
+
+h1 {
+    margin-left: 35%;
+    font-weight: bold;
+    color: #3366ff; /* Você pode substituir pelo código de cor desejado */
+    font-size: 24px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    margin-top: 2%;
+    
+}
+  
+  .section-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .physiotherapistAssistContainer
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }  
+
+  .physiotherapistAssistContainer{
+    max-width: 100%;
+  }
+
+  /*.cabeca {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #3366ff; /* Você pode substituir pelo código de cor desejado */
+    /*font-size: 24px; /* Tamanho da fonte */
+    /*text-transform: uppercase; /* Deixa o texto em maiúsculas */
+   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+ /* }*/ 

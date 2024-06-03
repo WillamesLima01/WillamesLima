@@ -84,13 +84,6 @@ body{
     box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
 }
 
-.cabeca {
-    font-size: 30px;
-    margin-top: 0px;
-    align-items: center;
-    justify-items: center;
-    margin-left: 35%;    
-}
 
 .imagem {
     width: 150px; /* Largura da imagem */
@@ -191,3 +184,5 @@ textarea {
     text-transform: uppercase; /* Deixa o texto em maiúsculas */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
   }  
+
+  

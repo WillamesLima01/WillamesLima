@@ -32,7 +32,7 @@ body{
 }
 
 .cabeca {
-    text-align: center; /* Centraliza o texto */
+    margin-left: 40%;
     font-weight: bold;
     color: #3366ff; /* Você pode substituir pelo código de cor desejado */
     font-size: 24px; /* Tamanho da fonte */

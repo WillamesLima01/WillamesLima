@@ -22,6 +22,8 @@ import EquineWatch from './pages/veterinary/EquineWatch';
 import EquineDescriptiveReview from './pages/veterinary/EquineDescriptiveReview';
 import PractitionerForm from './pages/ecotherapy/PractitionerForm';
 import PractitionerDetailsData from './pages/ecotherapy/PractitionerDetailsData';
+import PhysiotherapistAssist from './pages/ecotherapy/PhysiotherapistAssist';
+
 
 const App = () => {  
   return (
@@ -40,8 +42,7 @@ const AppContent = () => {
   const isEcotherapyRoute = path.includes("/ecotherapy");
   
   return (
-    <div> 
-      
+    <div>       
       {isInventoryRoute  && <NavBar />}
       {isEcotherapyRoute && <NavBar />}
       {isVeterinaryRoute && <NavBarVeterinary />}      
@@ -71,7 +72,8 @@ const AppContent = () => {
           <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} /> 
           <Route path='/ecotherapy/add-practitioner' element={<PractitionerForm />} />  
           <Route path='/ecotherapy/editar-practitioner/:id' element={<PractitionerForm />} />   
-          <Route path='/ecotherapy/dados-practitioner/:id' element={<PractitionerDetailsData />} />            
+          <Route path='/ecotherapy/dados-practitioner/:id' element={<PractitionerDetailsData />} />   
+          <Route path='/ecotherapy/PhysiotherapistAssist' element={<PhysiotherapistAssist />} />            
         </Routes>
       </div>
     </div>

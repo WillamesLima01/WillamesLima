@@ -9,8 +9,8 @@ const NavBar = () => {
     const path = location.pathname;
     const isInventoryRoute = path.startsWith("/inventory");
     const isEcotherapyRoute = path.startsWith("/ecotherapy");      
-    const retorno = location === "/ecotherapy/add-practitioners"? "/ecotherapy/listar-practitioners": "/ecotherapy";
-    
+    const retorno = location == '/ecotherapy/add-practitioner'? '/ecotherapy' : '/ecotherapy/listar-practitioners';
+    //alert(path)
     // Função para renderizar os links com base nas rotas
     const renderLinks = () => {
         if (isInventoryRoute) {

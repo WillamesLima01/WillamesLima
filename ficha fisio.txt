@@ -1,0 +1,269 @@
+tem como fazer um componente de atendimento para fisioterapeuta da seguinte forma:
+Dados Pessoas
+nome:
+data de nascimento
+escolaridade
+contato
+nome responsável
+Diagnóstico médico
+Médico responsável
+queixa principal
+
+
+HDA/CONDIÇÕES DE GESTAÇÃO
+Nº de filhos
+casos na família: (  )sim  ( ) não
+gestação planejada: (  ) sim   (  ) não
+Aborto: sim ou não / se sim quantos:
+Parentesco entre pais: sim ou não
+Gestação gemelar: sim ou não
+
+PRE-NATAL/ HISTÓRICO GESTACIONAL:
+colocar uma textArea para digitar algo
+
+PERÍODO PERI-NATAL
+Parto: ( ) normal   () forcéps   () cesário
+chorou : sim ou não
+cianose: sim ou não
+peso:__________
+idade gestacional:____________
+APGAR: ____________
+icterícia: sim ou não
+comprimento:______
+
+PERÍODO PÓS-NATAL
+
+complicações: sim ou não
+UTI/tempo:_________
+cirurgia:________________
+idade primeiro diagnóstico:_______________
+alta hospitalar:_______________________
+
+
+SAÚDE GERAL DO PRATICANTE
+
+Convulções anteriores: sim/ não/ considerações
+Convulções atuais: sim/ não/ considerações/frequencia
+medicamentos: sim/ não/ considerações
+constipação: sim/ não/ considerações
+sono: sim/ não/ considerações
+audição: sim/ não/ considerações
+visão: sim/ não/ considerações
+refluxo gastroesofágico: sim/ não/ considerações
+intervenções cirurgicas: sim/ não/ considerações
+alergias: sim/ não/ considerações
+
+COMUNICAÇÃO
+
+Fala: sim/ não/ considerações
+gestos: sim/ não/ considerações
+contato visual: sim/ não/ considerações
+
+
+DESENVOLVIMENTO MOTOR
+sustento da cabeça:_________________
+rolar:________________________________
+sentar:__________________________
+engatinhar/arrartar:____________________________
+andar:________________________________
+
+Obs: Indicado avaliação com GMFM-88: sim ou não
+
+
+TROFISMO:___________________________________________________________
+TÔNUS MUSCULAR:_________________________________________________
+
+Escala de Ashworth Modificada para graduação de espasticidade
+
+grau                                                          descrição
+0                                                 tônus normal
+1                  leve aumento do tonus
+
+AVALIAÇÃO POSTURAL
+
+Pés              ()normal     ()plano      ()cavo    ()equino     ()invertido         ()evertido
+                                        D/E            D/E         D/E             D/E                    D/E
+Joelhos       ()normal      ()valgo      ()varo    ()flexum      ()recurvatum
+                                         D/E           D/E        D/E               D/E
+Quadril        ()normal      ()desnivelado      ()anteverdida    ()retrovertida
+                                         D/E                      D/E                    D/E   
+coluna         ()normal      ()cifose      ()hiperlordose    ()escoliose
+                                         D/E             D/E                     D/E   
+Ombro        ()normal      ()protuso      ()retraido    ()elevado
+                                         D/E                D/E            D/E                              
+Cabeça        ()normal      ()rotação     ()inclinação    ()protusa
+                                         D/E              D/E        
+
+EQUILÍBRIO
+Estático                         realiza                   com dificuldade          não realiza                  observação
+sustenta a cabeça
+sentar sem apoio
+sentar com apoio
+posição ortostática com apoio
+posição ortostática sem apoio
+em um pé só - olhos abertos
+em um pé só - olhos fechados
+DINÂMICO
+engatinha
+marcha voluntária
+saltar com dois pés juntos
+correr
+
+GONIOMETRIA
+flexão de quadril(0-125º)       direito             ou           esquerdo
+extensão de quadril (0-10º) direito             ou           esquerdo
+abdução de quadril (0-45º)    direito             ou           esquerdo
+adução de quadril (0-15º)      direito             ou           esquerdo
+dorsiflexão (0-20º)                  direito             ou           esquerdo
+Flexão Plantar(0-45º)              direito             ou           esquerdo
+
+
+COORDENAÇÃO MOTORA
+textarea para digitar
+
+MARCHA
+com auxilio                          sim       não        Observação
+sem auxilio                          sim      não         Observação
+sobe                                    sim      não         Observação
+desce                                   sim      não         Observação
+Passa obstáculos                 sim      não         Observação
+Uso de órtese ou prótese   sim      não         Observação
+
+
+MOTRICIDADE / AVDs
+Alcance de objetos             sim      não         Observação
+Preensão de objetos           sim      não         Observação
+Uso bimanual                      sim      não         Observação
+Alimenta-se                         sim      não         Observação
+Higieniza-se                        sim      não         Observação
+Veste-se                              sim      não         Observação
+Controle de esfincteres      sim      não         Observação
+Escrita                                 sim      não         Observação
+
+
+ALTERAÇÃO DE SENSIBILIDADE:   ()SIM      ()NÃO              Observação
+
+
+ALTERAÇÃO NO PROCESSAMENTO SENSORIAL:   ()SIM        ()NÃO            Observação
+
+PADRÃO RESPIRATÓRIO: ()  Misto    ()  costal     ()diafragmático                 Observação
+
+Observações:
+textarea para digitar
+
+
+CONCLUSÃO/INDICAÇÃO OU CONTRAINDICAÇÃO PARA EQUOTERAPIA
+textarea para digitar
+
+Data____/_______/__________
+
+______________________________________________
+profissional / CREFITO
+
+
+
+ChatGPT
+ChatGPT
+Aqui está um modelo de componente de atendimento para fisioterapeutas baseado nas informações fornecidas:
+
+Dados Pessoais:
+
+Nome:
+Data de Nascimento:
+Escolaridade:
+Contato:
+Nome do Responsável:
+Diagnóstico Médico:
+
+Médico Responsável:
+Queixa Principal:
+HDA/Condições de Gestação:
+
+Número de Filhos:
+Casos na Família: ( ) Sim ( ) Não
+Gestação Planejada: ( ) Sim ( ) Não
+Aborto: ( ) Sim / Quantos:
+Parentesco Entre Pais: ( ) Sim ( ) Não
+Gestação Gemelar: ( ) Sim ( ) Não
+Pré-natal/Histórico Gestacional:
+
+[Espaço para inserir informações]
+Período Peri-natal:
+
+Parto: ( ) Normal ( ) Fórceps ( ) Cesário
+Chorou: ( ) Sim ( ) Não
+Cianose: ( ) Sim ( ) Não
+Peso: ________
+Idade Gestacional: ________
+APGAR: ________
+Icterícia: ( ) Sim ( ) Não
+Comprimento: ________
+Período Pós-natal:
+
+Complicações: ( ) Sim ( ) Não
+UTI/Tempo: ________
+Cirurgia: ________
+Idade Primeiro Diagnóstico: ________
+Alta Hospitalar: ________
+Saúde Geral do Paciente:
+
+Convulsões Anteriores: ( ) Sim / Não / Considerações
+Convulsões Atuais: ( ) Sim / Não / Considerações / Frequência
+Medicamentos: ( ) Sim / Não / Considerações
+Constipação: ( ) Sim / Não / Considerações
+Sono: ( ) Sim / Não / Considerações
+Audição: ( ) Sim / Não / Considerações
+Visão: ( ) Sim / Não / Considerações
+Refluxo Gastroesofágico: ( ) Sim / Não / Considerações
+Intervenções Cirúrgicas: ( ) Sim / Não / Considerações
+Alergias: ( ) Sim / Não / Considerações
+Comunicação:
+
+Fala: ( ) Sim / Não / Considerações
+Gestos: ( ) Sim / Não / Considerações
+Contato Visual: ( ) Sim / Não / Considerações
+Desenvolvimento Motor:
+
+Sustento da Cabeça: ________
+Rolar: ________
+Sentar: ________
+Engatinhar/Arrastar: ________
+Andar: ________
+Observação: Indicado avaliação com GMFM-88: ( ) Sim ( ) Não
+Trofismo:
+
+Tônus Muscular: ________
+Escala de Ashworth Modificada para Graduação de Espasticidade:
+
+[Tabela para preencher]
+Avaliação Postural:
+
+[Opções para preencher]
+Equilíbrio:
+
+[Opções para preencher]
+Goniometria:
+
+[Espaço para preencher]
+Coordenação Motora:
+
+[Espaço para inserir informações]
+Marcha:
+
+[Opções para preencher]
+Motricidade/AVDs:
+
+[Opções para preencher]
+Alteração de Sensibilidade: ( ) Sim ( ) Não / Observação: ________
+
+Alteração no Processamento Sensorial: ( ) Sim ( ) Não / Observação: ________
+
+Padrão Respiratório: ( ) Misto ( ) Costal ( ) Diafragmático / Observação: ________
+
+Observações: [Espaço para inserir informações]
+
+Conclusão/Indicação ou Contraindicação para Equoterapia: [Espaço para inserir informações]
+
+Data: _//
+
+Profissional / CREFITO: __________________________________________
