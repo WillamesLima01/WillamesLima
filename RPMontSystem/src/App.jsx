@@ -49,7 +49,7 @@ const AppContent = () => {
       
       <div className="container">
         <Routes>          
-          <Route path="/" element={<Principal />} />          
+          <Route path="/" element={<Login />} />          
           <Route path="/login" element={<Login />} />
           <Route path="/inventory/listar-produtos" element={<HeritageMaterialList />} />
           <Route path="/inventory/add-produto" element={<HeritageMaterialForm />} />

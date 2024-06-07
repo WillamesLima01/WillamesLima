@@ -55,7 +55,7 @@ const Principal = () => {
               type="text"
               placeholder="E-mail"
               required
-              value={username}
+              value={user}
               onChange={(e) => setUsername(e.target.value)}
             />
             <FaUser className={styles.icon} />
