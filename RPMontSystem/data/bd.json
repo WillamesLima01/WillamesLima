@@ -6,6 +6,13 @@
       "senha": "123",
       "setor": "veterinary",
       "formação": "veterinaria"      
+    },
+    {
+      "id": "2",      
+      "email": "aaaaa@email.com",
+      "senha": "321",
+      "setor": "ecoterapy",
+      "formação": "Fomo"      
     }
 
   ],  

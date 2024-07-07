@@ -117,7 +117,7 @@ const Login = () => {
             id="password"
             label="Senha"
             variant="standard"
-            type="password"
+            type="password"            
             fullWidth
           />
         </InputContainer>
