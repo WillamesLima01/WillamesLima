@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
 import { Box, TextField, Button, Typography, Link } from '@mui/material';
 import { keyframes } from '@emotion/react';
 import { styled } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 import brasaoBackground from '../../assets/brasao.jpeg';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from '../../api'; // Certifique-se que o axios está configurado corretamente
 
 const slideDown = keyframes`
@@ -90,6 +91,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     if (!email || !password) {
@@ -98,14 +100,16 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.get('users');
+      const response = await axios.get('/users');
       const users = response.data;
 
       const user = users.find(user => user.email === email && user.password === password);
-
+      
       if (user) {
         setError('');
         alert('Login bem-sucedido');
+        navigate(`/${user.setor.toLowerCase()}`); // Redireciona para a página do setor        
+
       } else {
         setError('Email ou senha inválidos');
       }
@@ -129,8 +133,7 @@ const Login = () => {
             id="email"
             label="Email"
             variant="standard"
-            fullWidth
-            required
+            fullWidth                      
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -144,8 +147,7 @@ const Login = () => {
             label="Senha"
             variant="standard"
             type="password"
-            fullWidth
-            required
+            fullWidth           
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />

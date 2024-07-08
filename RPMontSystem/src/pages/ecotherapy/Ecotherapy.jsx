@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Ecotherapy.module.css'
 
 const Ecotherapy = () => {

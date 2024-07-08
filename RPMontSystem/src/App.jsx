@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HeritageMaterialList from './pages/inventory/HeritageMaterialList';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +10,7 @@ import PistolGunList from './pages/inventory/PistolGunList';
 import PistolGunForm from './pages/inventory/PistolGunForm';
 import LongGunList from './pages/inventory/LongGunList';
 import LongGunForm from './pages/inventory/LongGunForm';
-import Principal from './pages/PageMain/Principal';
+//import Principal from './pages/PageMain/Principal';
 import Login from './pages/login/Login';
 import EquineList from './pages/veterinary/EquineList';
 import EquineForm from './pages/veterinary/EquineForm';
@@ -68,7 +67,7 @@ const AppContent = () => {
           <Route path="/veterinary/assistir-equino/:id" element={<EquineWatch />} />  
           <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} /> 
           <Route path='/veterinary/resenha-equino/:id' element={<EquineDescriptiveReview />} />
-          <Route path="/ecotherapy" element={<Ecotherapy />} />
+          <Route path="/ecoterapy" element={<Ecotherapy />} />
           <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} /> 
           <Route path='/ecotherapy/add-practitioner' element={<PractitionerForm />} />  
           <Route path='/ecotherapy/editar-practitioner/:id' element={<PractitionerForm />} />   

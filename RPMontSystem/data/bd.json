@@ -3,14 +3,14 @@
     {
       "id": "1",      
       "email": "jose@email.com",
-      "senha": "123",
+      "password": "123",
       "setor": "veterinary",
       "formação": "veterinaria"      
     },
     {
       "id": "2",      
-      "email": "aaaaa@email.com",
-      "senha": "321",
+      "email": "ana@gmail.com",
+      "password": "321",
       "setor": "ecoterapy",
       "formação": "Fomo"      
     }
