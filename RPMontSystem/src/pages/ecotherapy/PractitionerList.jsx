@@ -1,5 +1,5 @@
 import axios from '../../api';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaPenClip, FaPenToSquare } from 'react-icons/fa6';
 import { TbListDetails } from "react-icons/tb";
 import { FaRegTrashAlt } from "react-icons/fa";
@@ -44,7 +44,7 @@ const PractitionerList = () => {
         <div className={`${styles.container} mt-5`}>
             <h2 className='mb-4'>Lista de Praticantes</h2>
 
-            <button onClick={() => navigate('/ecotherapy/add-practitioner')} className='btn btn-primary mb-2'>Cadastrar Praticante</button>
+            <button onClick={() => navigate('/ecoterapia/add-praticante')} className='btn btn-primary mb-2'>Cadastrar Praticante</button>
 
             <table className={styles.table}>
                 <thead>
@@ -70,16 +70,16 @@ const PractitionerList = () => {
                                 <td>{practitioner.responsible}</td>
                                 
                                 <td className={styles.btAcao}>
-                                    <button title='Editar' className='btn btn-sm btn-warning me-md-2' onClick={() => navigate(`/ecotherapy/editar-practitioner/${practitioner.id}`)}>
+                                    <button title='Editar' className='btn btn-sm btn-warning me-md-2' onClick={() => navigate(`/ecoterapia/editar-praticante/${practitioner.id}`)}>
                                         <FaPenClip className={styles.btEditar} />
                                     </button>
                                     <button title='Excluir' onClick={() => deletePractitioner(practitioner.id)} className="btn btn-sm btn-danger me-md-2">
                                         <FaRegTrashAlt className={styles.btExcluir}/>
                                     </button>
-                                    <button title='Assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/veterinary/assistir-equino/${practitioner.id}`)}>
+                                    <button title='Assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/ecoterapia/assistir-praticante/${practitioner.id}`)}>
                                         <FaPenToSquare className={styles.btAssistir} />
                                     </button>
-                                    <button title='Detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/ecotherapy/dados-practitioner/${practitioner.id}`)}>
+                                    <button title='Detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/ecoterapia/dados-praticante/${practitioner.id}`)}>
                                         <TbListDetails className={styles.btAssistir} />
                                     </button>
                                 </td>

@@ -36,9 +36,9 @@ const AppContent = () => {
 
   const location = useLocation();  
   const path = location.pathname;
-  const isInventoryRoute = path.startsWith("/inventory");
-  const isVeterinaryRoute = path.includes("/veterinary");
-  const isEcotherapyRoute = path.includes("/ecotherapy");
+  const isInventoryRoute = path.startsWith("/inventario");
+  const isVeterinaryRoute = path.includes("/veterinaria");
+  const isEcotherapyRoute = path.includes("/ecoterapia");
   
   return (
     <div>       
@@ -50,29 +50,29 @@ const AppContent = () => {
         <Routes>          
           <Route path="/" element={<Login />} />          
           <Route path="/login" element={<Login />} />
-          <Route path="/inventory/listar-produtos" element={<HeritageMaterialList />} />
-          <Route path="/inventory/add-produto" element={<HeritageMaterialForm />} />
-          <Route path="/inventory/editar-produto/:id" element={<HeritageMaterialForm />} />
-          <Route path="/inventory/listar-coleteBalistico" element={<BulletproofVestList />} /> 
-          <Route path="/inventory/add-coleteBalistico" element={<BulletproofVestFrom />} />   
-          <Route path='/inventory/editar-vest/:id' element={<BulletproofVestFrom />} /> 
-          <Route path="/inventory/listar-pistola" element={<PistolGunList />} />      
-          <Route path="/inventory/add-pistola" element={<PistolGunForm />} />   
-          <Route path="/inventory/editar-pistola/:id" element={<PistolGunForm />} />
-          <Route path="/inventory/listar-armaLonga" element={<LongGunList />} />     
-          <Route path="/inventory/editar-armaLonga/:id" element={<LongGunForm />} />
-          <Route path="/inventory/add-armaLonga" element={<LongGunForm />} /> 
-          <Route path="/veterinary/listar-equino" element={<EquineList />} /> 
-          <Route path="/veterinary/add-equino" element={<EquineForm />} />
-          <Route path="/veterinary/assistir-equino/:id" element={<EquineWatch />} />  
-          <Route path="/veterinary/editar-equino/:id" element={<EquineForm />} /> 
-          <Route path='/veterinary/resenha-equino/:id' element={<EquineDescriptiveReview />} />
-          <Route path="/ecoterapy" element={<Ecotherapy />} />
-          <Route path="/ecotherapy/listar-practitioners" element={<PractitionerList />} /> 
-          <Route path='/ecotherapy/add-practitioner' element={<PractitionerForm />} />  
-          <Route path='/ecotherapy/editar-practitioner/:id' element={<PractitionerForm />} />   
-          <Route path='/ecotherapy/dados-practitioner/:id' element={<PractitionerDetailsData />} />   
-          <Route path='/ecotherapy/PhysiotherapistAssist' element={<PhysiotherapistAssist />} />            
+          <Route path="/inventario/listar-produtos" element={<HeritageMaterialList />} />
+          <Route path="/inventario/add-produto" element={<HeritageMaterialForm />} />
+          <Route path="/inventario/editar-produto/:id" element={<HeritageMaterialForm />} />
+          <Route path="/inventario/listar-coleteBalistico" element={<BulletproofVestList />} /> 
+          <Route path="/inventario/add-coleteBalistico" element={<BulletproofVestFrom />} />   
+          <Route path='/inventario/editar-vest/:id' element={<BulletproofVestFrom />} /> 
+          <Route path="/inventario/listar-pistola" element={<PistolGunList />} />      
+          <Route path="/inventario/add-pistola" element={<PistolGunForm />} />   
+          <Route path="/inventario/editar-pistola/:id" element={<PistolGunForm />} />
+          <Route path="/inventario/listar-armaLonga" element={<LongGunList />} />     
+          <Route path="/inventario/editar-armaLonga/:id" element={<LongGunForm />} />
+          <Route path="/inventario/add-armaLonga" element={<LongGunForm />} /> 
+          <Route path="/veterinaria/listar-equino" element={<EquineList />} /> 
+          <Route path="/veterinaria/add-equino" element={<EquineForm />} />
+          <Route path="/veterinaria/assistir-equino/:id" element={<EquineWatch />} />  
+          <Route path="/veterinariay/editar-equino/:id" element={<EquineForm />} /> 
+          <Route path='/veterinaria/resenha-equino/:id' element={<EquineDescriptiveReview />} />
+          <Route path="/ecoterapia" element={<Ecotherapy />} />
+          <Route path="/ecoterapia/listar-praticantes" element={<PractitionerList />} /> 
+          <Route path='/ecoterapia/add-praticante' element={<PractitionerForm />} />  
+          <Route path='/ecoterapia/editar-praticante/:id' element={<PractitionerForm />} />   
+          <Route path='/ecoterapia/dados-praticante/:id' element={<PractitionerDetailsData />} />   
+          <Route path='/ecoterapia/PhysiotherapistAssist' element={<PhysiotherapistAssist />} />            
         </Routes>
       </div>
     </div>
