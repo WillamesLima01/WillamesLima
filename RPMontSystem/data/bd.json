@@ -1,22 +1,20 @@
 {
-  "users":[
+  "users": [
     {
-      "id": "1",      
+      "id": "1",
       "email": "jose@email.com",
       "password": "123",
       "setor": "veterinaria",
-      "formação": "veterinaria"      
+      "formação": "veterinaria"
     },
     {
-      "id": "2",      
+      "id": "2",
       "email": "ana@gmail.com",
       "password": "321",
-      "setor": "ecoterapia",
-      "formação": "Fomo"      
+      "setor": "equoterapia",
+      "formação": "Fomo"
     }
-
-  ],  
-  
+  ],
   "products": [
     {
       "id": "1",

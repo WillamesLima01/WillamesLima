@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styles from './Veterinary.module.css';
 import axios from '../../api';
@@ -43,36 +43,36 @@ const EquineForm = () => {
     <>
     <form className={`${styles.container} mt-5`} onSubmit={handleSubmit}>
         
-        <h1 className={styles.cabeca}>Cadastro de Equino</h1>
+        <h1 className={styles.cabeca}>{id ? 'Editar' : 'Cadastrar'} Equino</h1>
 
         <section className={styles.etapa1}>
             <div className={styles.formgroup}>
-                <label htmlFor="name">Nome</label>
+                <label htmlFor="name" className={styles.corFonte}>Nome</label>
                 <input type='text' className={styles.formControl} id="name" name="name" value={equine.name} onChange={handleChange} required />
             </div>
             
             <div className={styles.formgroup}>
-                <label htmlFor="birthDate">Data Nascimento</label>
+                <label htmlFor="birthDate" className={styles.corFonte}>Data Nascimento</label>
                 <input type='date' className={styles.formControl} id="birthDate" name="birthDate" value={equine.birthDate} onChange={handleChange} required />
             </div>
 
             <div className={styles.formgroup}>
-                <label htmlFor="coat">Pelagem</label>
+                <label htmlFor="coat" className={styles.corFonte}>Pelagem</label>
                 <input type='text' className={styles.formControl} id="coat" name="coat" value={equine.coat} onChange={handleChange} required />
             </div>
 
             <div className={styles.formgroup}>
-                <label htmlFor="inclusion">Inclusão</label>
+                <label htmlFor="inclusion" className={styles.corFonte}>Inclusão</label>
                 <input type='text' className={styles.formControl} id="inclusion" name="inclusion" value={equine.inclusion} onChange={handleChange} required />
             </div>
             
             <div className={styles.formgroup}>
-                <label htmlFor="record">Registro</label>
+                <label htmlFor="record" className={styles.corFonte}>Registro</label>
                 <input type='text' className={styles.formControl} id="record" name="record" value={equine.record} onChange={handleChange} required />
             </div>  
 
             <div className={styles.formgroup}>
-                <label htmlFor="local">Local</label>
+                <label htmlFor="local" className={styles.corFonte}>Local</label>
                 <select id="local" name="local" className={styles.formControl} value={equine.local} onChange={handleChange} required>
                     <option disabled value="">Selecione</option>
                     <option value="RPMont">RPMont</option>
@@ -81,7 +81,7 @@ const EquineForm = () => {
             </div>
 
             <div className={styles.formgroup}>
-                <label htmlFor="sex">Sexo</label>
+                <label htmlFor="sex" className={styles.corFonte}>Sexo</label>
                 <select id="sex" name="sex" className={styles.formControl} value={equine.sex} onChange={handleChange} required>
                     <option disabled value="">Selecione</option>
                     <option value="macho">Macho</option>
@@ -90,7 +90,7 @@ const EquineForm = () => {
             </div>
 
             <div className={styles.formgroup}>
-                <label htmlFor="situation">Situação</label>
+                <label htmlFor="situation" className={styles.corFonte}>Situação</label>
                 <select id="situation" name="situation" className={styles.formControl} value={equine.situation} onChange={handleChange} required>
                     <option disabled value="">Selecione</option>
                     <option value="Em atividade">Em atividade</option>

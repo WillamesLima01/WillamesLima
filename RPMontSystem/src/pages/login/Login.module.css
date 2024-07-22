@@ -1,3 +1,78 @@
-.login {
-    background-color: brown;
-}
+@keyframes slideDown {
+    from {
+      transform: translate(-50%, -200%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .loginBox {
+    animation: slideDown 1s ease-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .loginTitle {
+    margin-bottom: 16px;
+    color: #3f51b5;
+    text-shadow: 1px 1px 2px #303f9f;
+    font-weight: bold;
+  }
+  
+  .blueButton {
+    background-color: #5A86D5;
+    color: white;
+  }
+  .blueButton:hover {
+    background-color: #008000;
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
+  
+  .iconWrapper {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    color: #5A86D5;
+    padding-bottom: 1px;
+  }
+  
+  .forgotPasswordLink {
+    margin-top: 8px;
+    display: block;
+    color: #3f51b5;
+    text-decoration: none;
+  }
+  .forgotPasswordLink:hover {
+    text-decoration: underline;
+  }
+  
+  .loginContainer {
+    position: relative;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+  

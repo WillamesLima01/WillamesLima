@@ -8,8 +8,8 @@ const NavBar = () => {
     const location = useLocation();
     const path = location.pathname;
     const isInventoryRoute = path.startsWith("/inventario");
-    const isEcotherapyRoute = path.startsWith("/ecoterapia");      
-    const retorno = location == '/ecoterapia/add-praticante'? '/ecoterapia' : '/ecoterapia/listar-praticantes';
+    const isEcotherapyRoute = path.startsWith("/equoterapia");      
+    const retorno = location == '/equoterapia/add-praticante'? '/equoterapia' : '/equoterapia/listar-praticantes';
     //alert(path)
     // Função para renderizar os links com base nas rotas
     const renderLinks = () => {
@@ -26,11 +26,11 @@ const NavBar = () => {
         } else if (isEcotherapyRoute) {
             return (
                 <React.Fragment>                    
-                    <Link to="/ecoterapia/listar-praticantes" className={styles.menuLink}>Listar Praticantes</Link>
-                    <Link to="/ecoterapia/listar-profissionais" className={styles.menuLink}>Listar Profissionais</Link>
-                    <Link to="/ecoterapia/relatorio" className={styles.menuLink}>Relatório</Link>  
-                    <Link to="/ecoterapia/consultar-praticante" className={styles.menuLink}>Consultar Praticante</Link>
-                    <Link to="/ecoterapia/consultar-profissional" className={styles.menuLink}>Consultar Profissional</Link>                    
+                    <Link to="/equoterapia/listar-praticantes" className={styles.menuLink}>Listar Praticantes</Link>
+                    <Link to="/equoterapia/listar-profissionais" className={styles.menuLink}>Listar Usuários</Link>
+                    <Link to="/equoterapia/relatorio" className={styles.menuLink}>Relatório</Link>  
+                    <Link to="/equoterapia/consultar-praticante" className={styles.menuLink}>Consultar Praticante</Link>
+                    <Link to="/equoterapia/consultar-profissional" className={styles.menuLink}>Consultar Profissional</Link>                    
                     <Link to="/"><FaHome title='Início' className={styles.csImg}/></Link>
                     <Link to={retorno}><GiReturnArrow  title='Retornar' className={styles.retornoImg}/></Link> 
                 </React.Fragment>

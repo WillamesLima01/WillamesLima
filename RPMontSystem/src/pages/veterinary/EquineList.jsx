@@ -1,5 +1,5 @@
 import axios from '../../api';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaPenClip, FaPenToSquare } from 'react-icons/fa6';
 import { FaRegTrashAlt } from 'react-icons/fa';
@@ -37,9 +37,9 @@ const EquineList = () => {
 
   return (
     <div className={`${styles.container} mt-5`}>
-        <h2 className='mb-4'>Lista de equinos</h2>
+        <h2 className={styles.cabeca}>Lista de equinos</h2>
 
-        <button onClick={() => navigate('/veterinary/add-equino')} className='btn btn-primary mb-2'>Adicionar equino</button>
+        <button onClick={() => navigate('/veterinaria/add-equino')} className='btn btn-primary mb-2'>Adicionar equino</button>
 
         <table className={styles.table}>
             <thead>
@@ -69,16 +69,16 @@ const EquineList = () => {
                             <td>{equine.situation}</td>
 
                             <td className={styles.btAcao}>
-                                <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/veterinary/editar-equino/${equine.id}`)}>
+                                <button title='editar' className="btn btn-sm btn-warning me-md-2" onClick={() => navigate(`/veterinaria/editar-equino/${equine.id}`)}>
                                     <FaPenClip className={styles.btEditar} />
                                 </button>
                                 <button title='excluir' onClick={() => deleteEquine(equine.id)} className="btn btn-sm btn-danger me-md-2">
                                     <FaRegTrashAlt className={styles.btExcluir}/>                                    
                                 </button>
-                                <button title='assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/veterinary/assistir-equino/${equine.id}`)}>
+                                <button title='assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/veterinaria/assistir-equino/${equine.id}`)}>
                                     <FaPenToSquare className={styles.btAssistir} />
                                 </button>
-                                <button title='resenha descritiva' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/veterinary/resenha-equino/${equine.id}`)}>
+                                <button title='resenha descritiva' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/veterinaria/resenha-equino/${equine.id}`)}>
                                     <BsImages className={styles.btAssistir} />
                                 </button>
                             </td>

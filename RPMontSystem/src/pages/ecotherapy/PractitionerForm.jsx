@@ -1,5 +1,5 @@
 import axios from '../../api';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styles from './Ecotherapy.module.css';
 
@@ -79,7 +79,7 @@ const PractitionerForm = () => {
     axios[method](url, payload)
       .then(() => {
         alert(`Praticante ${id ? 'Atualizado' : 'Adicionado'} com sucesso!`);
-        navigate("/ecotherapy/listar-practitioners");
+        navigate("/equoterapia/listar-praticantes");
       })
       .catch(error => {
         console.error("Ocorreu um erro: ", error);
@@ -144,56 +144,56 @@ const PractitionerForm = () => {
       )}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Nome do Praticante</label>
+          <label htmlFor="name" className={styles.corFonte}>Nome do Praticante</label>
           <input type="text" className="form-control" id="name" name="name" value={practitioner.name} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="birthDate">Data de Nascimento</label>
+          <label htmlFor="birthDate" className={styles.corFonte}>Data de Nascimento</label>
           <input type="date" className="form-control" id="birthDate" name="birthDate" value={practitioner.birthDate} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="contact">Contato</label>
+          <label htmlFor="contact" className={styles.corFonte}>Contato</label>
           <input type="text" className="form-control" id="contact" name="contact" value={practitioner.contact} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className={styles.corFonte}>Email</label>
           <input type="email" className="form-control" id="email" name="email" value={practitioner.email} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="education">Escolaridade</label>
+          <label htmlFor="education" className={styles.corFonte}>Escolaridade</label>
           <input type="text" className="form-control" id="education" name="education" value={practitioner.education} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="responsible">Responsável</label>
+          <label htmlFor="responsible" className={styles.corFonte}>Responsável</label>
           <input type="text" className="form-control" id="responsible" name="responsible" value={practitioner.responsible} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="zipcode">CEP</label>
+          <label htmlFor="zipcode" className={styles.corFonte}>CEP</label>
           <input type="text" className="form-control" id="zipcode" name="zipcode" value={practitioner.zipcode} onChange={handleChange} onBlur={handleCepBlur} required />
           {cepLoading && <p>Buscando CEP...</p>}
         </div>
         <div className="form-group">
-          <label htmlFor="street">Rua/logradouro</label>
+          <label htmlFor="street" className={styles.corFonte}>Rua/logradouro</label>
           <input type="text" className="form-control" id="street" name="street" value={practitioner.street} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="number">Número</label>
+          <label htmlFor="number" className={styles.corFonte}>Número</label>
           <input type="text" className="form-control" id="number" name="number" value={practitioner.number} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="neighborhood">Bairro</label>
+          <label htmlFor="neighborhood" className={styles.corFonte}>Bairro</label>
           <input type="text" className="form-control" id="neighborhood" name="neighborhood" value={practitioner.neighborhood} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="city">Cidade</label>
+          <label htmlFor="city" className={styles.corFonte}>Cidade</label>
           <input type="text" className="form-control" id="city" name="city" value={practitioner.city} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="state">Estado</label>
+          <label htmlFor="state" className={styles.corFonte}>Estado</label>
           <input type="text" className="form-control" id="state" name="state" value={practitioner.state} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="country">País</label>
+          <label htmlFor="country" className={styles.corFonte}>País</label>
           <input type="text" className="form-control" id="country" name="country" value={practitioner.country} onChange={handleChange} required />
         </div>
         <div className={styles.botao}>

@@ -1,3 +1,5 @@
+// PractitionerList.jsx
+
 import axios from '../../api';
 import { useEffect, useState } from 'react';
 import { FaPenClip, FaPenToSquare } from 'react-icons/fa6';
@@ -40,11 +42,17 @@ const PractitionerList = () => {
         return `${partesData[2]}/${partesData[1]}/${partesData[0]}`;
     };
 
+    const navigateToFichaEvolucao = (practitioner) => {
+        const currentDate = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+        navigate(`/equoterapia/fichaEvolucao/${practitioner.id}`, { state: { name: practitioner.name, date: currentDate } });
+    };
+    
+
     return (
         <div className={`${styles.container} mt-5`}>
             <h2 className='mb-4'>Lista de Praticantes</h2>
 
-            <button onClick={() => navigate('/ecoterapia/add-praticante')} className='btn btn-primary mb-2'>Cadastrar Praticante</button>
+            <button onClick={() => navigate('/equoterapia/add-praticante')} className='btn btn-primary mb-2'>Cadastrar Praticante</button>
 
             <table className={styles.table}>
                 <thead>
@@ -70,16 +78,19 @@ const PractitionerList = () => {
                                 <td>{practitioner.responsible}</td>
                                 
                                 <td className={styles.btAcao}>
-                                    <button title='Editar' className='btn btn-sm btn-warning me-md-2' onClick={() => navigate(`/ecoterapia/editar-praticante/${practitioner.id}`)}>
+                                    <button title='Editar' className='btn btn-sm btn-warning me-md-2' onClick={() => navigate(`/equoterapia/editar-praticante/${practitioner.id}`)}>
                                         <FaPenClip className={styles.btEditar} />
                                     </button>
                                     <button title='Excluir' onClick={() => deletePractitioner(practitioner.id)} className="btn btn-sm btn-danger me-md-2">
                                         <FaRegTrashAlt className={styles.btExcluir}/>
                                     </button>
-                                    <button title='Assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/ecoterapia/assistir-praticante/${practitioner.id}`)}>
+                                    <button title='Assistir' className="btn btn-sm btn-info me-md-2" onClick={() => navigate(`/equoterapia/assistir-praticante/${practitioner.id}`)}>
                                         <FaPenToSquare className={styles.btAssistir} />
                                     </button>
-                                    <button title='Detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/ecoterapia/dados-praticante/${practitioner.id}`)}>
+                                    <button title='Ficha de evolução' className="btn btn-sm btn-light me-md-2" onClick={() => navigateToFichaEvolucao(practitioner)}>
+                                        <FaPenToSquare className={styles.btEvolucao} />
+                                    </button>
+                                    <button title='Detalhes' className="btn btn-sm btn-secondary me-md-2" onClick={() => navigate(`/equoterapia/dados-praticante/${practitioner.id}`)}>
                                         <TbListDetails className={styles.btAssistir} />
                                     </button>
                                 </td>

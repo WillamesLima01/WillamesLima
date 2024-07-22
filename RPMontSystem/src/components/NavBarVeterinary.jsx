@@ -5,8 +5,8 @@ import styles from './NavBar.module.css';
 
 const NavBarVeterinary = () => {
     const location = useLocation();
-    const retorno = location.pathname === "/veterinaria/add-equino" || location.pathname === "/veterinaria/assitir-equino/:id" ? "/veterinaria/listar-equino" : "/";
-
+    const retorno = location.pathname === "/veterinaria/add-equino" || location.pathname === "/veterinaria/assitir-equino/:id" ? "/veterinaria/listar-equino" : "/veterinaria/listar-equino";
+    //alert(location.pathname)
     return (
         <nav className={styles.menuVt}>
             <div className={styles.NavBarVt}>

@@ -3,6 +3,11 @@
     color: white;     
 } 
 
+.btEvolucao {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);     
+} 
+
 .btExcluir {
     font-size: 1.2em;
     color: white;    
@@ -64,6 +69,7 @@ body{
     border-collapse: collapse;
     margin-top: 20px;    
 }
+
 
 .table th, .table td {
     text-align: left;
@@ -133,9 +139,9 @@ textarea {
     margin-top: 20px; /* Aumenta a margem superior para distanciar o botão das imagens */
 }
 
-.form_control {
+/*.form_control {
     height: 200px !important;
-}
+}*/
 
 .containerMain {
     background-image: url('../../assets/eco2.jpg');
@@ -177,7 +183,8 @@ textarea {
 
 .cabeca {
     position: absolute;
-    left: 50%;
+    left: 14%;
+    margin-top: 1%;
     transform: translateX(-50%);
     font-weight: bold;
     color: #3366ff; /* Você pode substituir pelo código de cor desejado */
