@@ -324,5 +324,39 @@
         "country": "Brasil"
       }
     }
+  ],  
+    "evolutionPractitioner": [
+      {
+        "id": "1",
+        "practitionerId": "1",
+        "date": "2023-07-22",
+        "arrivalState": ["Tranquilo", "Alerto"],
+        "activityService": ["Fisioterapia", "Equoterapia"],
+        "psychologicalAspects": {
+          "consciousness": ["Auto", "Temporal"],
+          "humor": ["Eutímico", "Ansioso"],
+          "attention": ["Concentrada", "Oscilante"],
+          "others": "Algum comentário adicional"
+        },
+        "exitState": ["Tranquilo", "Sonolento"],
+        "observation": "Observação sobre o atendimento",
+        "professionals": "Dr. José"
+      },
+      {
+        "id": "2",
+        "practitionerId": "21ad",
+        "date": "2023-07-23",
+        "arrivalState": ["Agitado"],
+        "activityService": ["Equoterapia"],
+        "psychologicalAspects": {
+          "consciousness": ["Parcial", "Espacial"],
+          "humor": ["Irritadiço", "Ansioso"],
+          "attention": ["Dispersa"],
+          "others": "Nenhum comentário adicional"
+        },
+        "exitState": ["Introspectivo", "Ansioso"],
+        "observation": "Observação específica do atendimento",
+        "professionals": "Dra. Ana"
+      }
   ]
 }

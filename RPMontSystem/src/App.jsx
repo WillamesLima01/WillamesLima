@@ -72,7 +72,7 @@ const AppContent = () => {
           <Route path="/equoterapia/listar-praticantes" element={<PractitionerList />} /> 
           <Route path='/equoterapia/add-praticante' element={<PractitionerForm />} />  
           <Route path='/equoterapia/editar-praticante/:id' element={<PractitionerForm />} />             
-          <Route path='/equoterapia/fichaEvolucao/:id' element={<FichaEvolucao />} />
+          <Route path='/equoterapia/fichaEvolucao/:id' element={<FichaEvolucao />} />          
           <Route path='/equoterapia/dados-praticante/:id' element={<PractitionerDetailsData />} />           
           <Route path='/equoterapia/PhysiotherapistAssist' element={<PhysiotherapistAssist />} />            
         </Routes>

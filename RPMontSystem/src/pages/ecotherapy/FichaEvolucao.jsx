@@ -7,16 +7,19 @@ import {
     FormControlLabel,
     FormGroup,
     Paper,
-    Radio,
+    Radio,    
     Table,
     TableBody,
     TableCell,
     TableContainer,
     TableRow,
     Typography,
-    TextField
+    TextField,
+    Button
   } from '@mui/material';
   import { useLocation, useParams } from 'react-router-dom';
+  //import axios from '../../api';
+ // import { useState, useEffect } from 'react';
   
   // Função para formatar a data no formato dd/mm/yyyy
   const formatDate = (dateString) => {
@@ -29,6 +32,26 @@ import {
     const { id } = useParams(); // Captura o parâmetro 'id'
     const location = useLocation();
     const { name, date } = location.state || {}; // Captura o estado passado
+
+    //const [formData, setFormData] = useState({
+    //  estadoChegada:[],
+    //  atividadeAtendimento:[],
+    //  aspectosPsicologicos:{
+    //    orientacao:[],
+    //    humor:[]
+    //  },
+     // estadoSaida:[]
+    //});
+
+    //useEffect(() => {
+      //função para buscar os dados
+     // const fetchData = async () => {
+      //  try {
+      //    const response = await axios.get('evolutionPractitioner');
+      //    const data = response.data;
+     //   }
+    //  }
+   /// })
   
     console.log("ID do praticante:", id); // Verifica se o id está sendo capturado
   
@@ -67,24 +90,28 @@ import {
                   <TableBody>
                     <TableRow>
                       <TableCell>
-                        <FormControlLabel
+                        <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Montaria:</Typography>
+                        <FormControlLabel                          
                           control={<Checkbox id="activity1" value="independente" />}
                           label="Independente"
                         />
                       </TableCell>
                       <TableCell>
+                        <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Alongamento:</Typography>
                         <FormControlLabel
                           control={<Checkbox id="activity2" value="ativo" />}
                           label="Ativo"
                         />
                       </TableCell>
                       <TableCell>
+                        <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Maneabilidade:</Typography>
                         <FormControlLabel
                           control={<Checkbox id="activity3" value="independente" />}
                           label="Independente"
                         />
                       </TableCell>
                       <TableCell>
+                        <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Fortalecimento:</Typography>
                         <FormControlLabel
                           control={<Checkbox id="activity4" value="mmss" />}
                           label="MMSS"
@@ -119,7 +146,7 @@ import {
                     </TableRow>
                     <TableRow>
                       <TableCell>
-                        <h6>Andadura:</h6>
+                        <Typography variant="subtitle1">Andadura:</Typography>
                         <FormControlLabel
                           control={<Checkbox id="activity1" value="passo" />}
                           label="Passo"
@@ -139,9 +166,7 @@ import {
                           label="MMSS"
                         />
                       </TableCell>
-                      <TableCell>
-                        <h6></h6>
-                      </TableCell>
+                      <TableCell></TableCell>   
                       <TableCell>
                         <FormControlLabel
                           control={<Checkbox id="activity4" value="tronco" />}
@@ -150,18 +175,14 @@ import {
                       </TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>
-                        <h6></h6>
-                      </TableCell>
+                      <TableCell></TableCell>
                       <TableCell>
                         <FormControlLabel
                           control={<Checkbox id="activity2" value="mmii" />}
                           label="MMII"
                         />
                       </TableCell>
-                      <TableCell>
-                        <h6></h6>
-                      </TableCell>
+                      <TableCell></TableCell>
                       <TableCell>
                         <FormControlLabel
                           control={<Checkbox id="activity4" value="orofaciais" />}
@@ -441,7 +462,13 @@ import {
                         />
                     </Box>
                 </CardContent>
-            </Card>            
+            </Card>    
+                 {/* Botão para Enviar Dados */}
+        <Box sx={{ display: 'flex', justifyContent: 'flex-start', marginTop: 1 }}>
+          <Button variant="contained" color="primary" onClick={() => alert('Dados enviados!')}>
+            Enviar Dados
+          </Button>
+        </Box>    
         </Box>               
       </Box>
     );
