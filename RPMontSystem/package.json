@@ -11,10 +11,10 @@
     "server": "json-server --watch data/bd.json"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.0",
-    "@mui/material": "^5.16.0",
+    "@mui/material": "^5.16.6",
     "@mui/system": "^5.16.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
@@ -22,6 +22,7 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-input-mask": "^2.0.4",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

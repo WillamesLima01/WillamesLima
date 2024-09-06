@@ -1,0 +1,49 @@
+PS C:\WINDOWS\system32> wsl
+willames01@DESKTOP-I2U0DR3:/mnt/c/WINDOWS/system32$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+willames01@DESKTOP-I2U0DR3:/mnt/c/WINDOWS/system32$ docker run --name RPMontDB -e POSTGRES_PASSWORD=admin -p 5439:5432 -d postgres
+Unable to find image 'postgres:latest' locally
+latest: Pulling from library/postgres
+e4fff0779e6d: Pull complete
+3dd23fa89c28: Pull complete
+9110f5284332: Pull complete
+b2a5b191a941: Pull complete
+f0baaf1c42c6: Pull complete
+3c42bd6bf488: Pull complete
+cb55f9f5ebf8: Pull complete
+6eeec50ef8e1: Pull complete
+ba3d1f8aa002: Pull complete
+199cdf05dfec: Pull complete
+438d147df750: Pull complete
+a2e706f2e593: Pull complete
+2505d0b60422: Pull complete
+133de8acf4aa: Pull complete
+Digest: sha256:c62fdb7fd6f519ef425c54760894c74e8d0cb04fbf4f7d3d79aafd86bae24edd
+Status: Downloaded newer image for postgres:latest
+0a991aad7cfcddcd20227c100825ac94fd83b184ac79ec66569356ac197c4ce5
+willames01@DESKTOP-I2U0DR3:/mnt/c/WINDOWS/system32$
+
+=================================================================================================================================
+
+--name RPMontDB: Dá ao contêiner o nome RPMontDB.
+-e POSTGRES_PASSWORD=admin: Define a senha do usuário postgres dentro do contêiner como admin.
+-p 5439:5432: Mapeia a porta 5432 do contêiner (padrão do PostgreSQL) para a porta 5439 do host. Isso permite que você acesse o PostgreSQL no seu host na porta 5439.
+-d postgres: Executa o contêiner em modo "detached" (em segundo plano) usando a imagem postgres.
+
+=================================================================================================================================
+
+Conectar ao PostgreSQL:
+Com o contêiner em execução, você pode conectar-se ao PostgreSQL no contêiner usando qualquer cliente PostgreSQL, como psql, ou uma ferramenta gráfica como DBeaver ou pgAdmin.
+
+Host: localhost
+Porta: 5439
+Usuário: postgres
+Senha: admin
+Essas são as credenciais que você configurou no comando docker run.
+
+Próximos passos:
+Gerenciar o contêiner:
+Para parar o contêiner: docker stop RPMontDB
+Para reiniciar o contêiner: docker start RPMontDB
+Para remover o contêiner: docker rm RPMontDB
+Se tudo estiver funcionando conforme esperado, você pode começar a usar o PostgreSQL dentro do contêiner para armazenar e gerenciar seus dados. Se tiver mais perguntas ou precisar de ajuda adicional, estou à disposição!

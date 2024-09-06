@@ -4,7 +4,7 @@ import LockIcon from '@mui/icons-material/Lock';
 import brasaoBackground from '../../assets/brasao.jpeg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from '../../api'; // Certifique-se que o axios está configurado corretamente
+import axios from '../../api'; 
 import styles from './Login.module.css';
 
 const Login = () => {
@@ -28,10 +28,10 @@ const Login = () => {
       if (user) {
         setError('');
         alert('Login bem-sucedido');
-        if (`${user.setor}` === "veterinaria") {
-          navigate(`/${user.setor.toLowerCase()}` + "/listar-equino"); // Redireciona para a página do setor
+        if (`${user.sector}` === "veterinaria") {
+          navigate(`/${user.sector.toLowerCase()}` + "/listar-equino"); // Redireciona para a página do setor
         } else {
-          navigate(`/${user.setor.toLowerCase()}`); // Redireciona para a página do setor
+          navigate(`/${user.sector.toLowerCase()}`); // Redireciona para a página do setor
         }
 
       } else {
