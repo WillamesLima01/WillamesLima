@@ -24,7 +24,7 @@ import PractitionerDetailsData from './pages/ecotherapy/PractitionerDetailsData'
 import PhysiotherapistAssist from './pages/ecotherapy/PhysiotherapistAssist';
 import FichaEvolucao from './pages/ecotherapy/FichaEvolucao';
 import PsychologistAssist from './pages/ecotherapy/PsychologistAssist';
-
+import SpeechTherapistAssist from './pages/ecotherapy/SpeechTherapistAssist';
 const App = () => {  
   return (
     <BrowserRouter>
@@ -76,6 +76,7 @@ const AppContent = () => {
           <Route path='/equoterapia/dados-praticante/:id' element={<PractitionerDetailsData />} />           
           <Route path='/equoterapia/PhysiotherapistAssist' element={<PhysiotherapistAssist />} />   
           <Route path='/equoterapia/PsychologistAssist' element={<PsychologistAssist />} />           
+          <Route path='equoterapia/SpeechTherapistAssist' element={<SpeechTherapistAssist />} />
         </Routes>
       </div>
     </div>
