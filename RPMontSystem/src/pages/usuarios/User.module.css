@@ -86,10 +86,9 @@ body{
     background-color: rgba(250, 250, 210, 0.5);
 }
 
-/* Adiciona sombra ao elemento quando em hover */
-.form-control:hover {    
-    border-color: #16c909;
-    box-shadow: 0 0 10px rgba(179, 205, 230, 0.3)
+.formControl:hover {    
+    border-color: #c6d8e6; 
+    box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
 }
 
 
@@ -131,21 +130,29 @@ textarea {
     height: 50%;      
 }
 
+.formControl:hover {    
+    border-color: #16c909; 
+    box-shadow: 0 0 10px rgba(179, 205, 230, 0.3);     
+}
+
 .botao {
     margin-top: 20px; /* Aumenta a margem superior para distanciar o botão das imagens */
 }
 
+/*.form_control {
+    height: 200px !important;
+}*/
+
 .containerMain {
     background-image: url('../../assets/eco2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain; /* Ajuste para manter a proporção da imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: center;
-    width: 100%;
-    height: 100vh; 
+    width: 50%;
+    height: 50vh; 
     position: relative; 
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 .praticanteDados {
     display: grid;
@@ -174,20 +181,7 @@ textarea {
     width: 100%;    
 }
 
-.cabeca {
-    position: absolute;
-    left: 14%;
-    margin-top: 1%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    color: #3366ff; /* Você pode substituir pelo código de cor desejado */
-    font-size: 24px; /* Tamanho da fonte */
-    text-transform: uppercase; /* Deixa o texto em maiúsculas */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
-  }  
-
-  .cabeca1{
-    margin-left: 40%;
+.cabeca1{    
     font-weight: bold;
     color: #3366ff;
     font-size: 28px;
@@ -196,3 +190,11 @@ textarea {
   }
 
   
+.cabeca{
+    margin-left: 40%;
+    font-weight: bold;
+    color: #3366ff;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }

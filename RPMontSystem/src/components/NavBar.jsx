@@ -8,8 +8,10 @@ const NavBar = () => {
     const location = useLocation();
     const path = location.pathname;
     const isInventoryRoute = path.startsWith("/inventario");
-    const isEcotherapyRoute = path.startsWith("/equoterapia");      
+    const isEcotherapyRoute = path;    
+    const isUserRoute = path.startsWith("/usuarios");    
     const retorno = location == '/equoterapia/add-praticante'? '/equoterapia' : '/equoterapia/listar-praticantes';
+    
     //alert(path)
     // Função para renderizar os links com base nas rotas
     const renderLinks = () => {
@@ -23,11 +25,11 @@ const NavBar = () => {
                     <Link to="/"><FaHome title='Início' className={styles.csImg}/></Link>
                 </React.Fragment>
             );
-        } else if (isEcotherapyRoute) {
+        } else if (isEcotherapyRoute || isUserRoute) {
             return (
                 <React.Fragment>                    
                     <Link to="/equoterapia/listar-praticantes" className={styles.menuLink}>Listar Praticantes</Link>
-                    <Link to="/equoterapia/listar-profissionais" className={styles.menuLink}>Listar Usuários</Link>
+                    <Link to="/usuarios/usuarioList" className={styles.menuLink}>Listar Usuários</Link>
                     <Link to="/equoterapia/relatorio" className={styles.menuLink}>Relatório</Link>  
                     <Link to="/equoterapia/consultar-praticante" className={styles.menuLink}>Consultar Praticante</Link>
                     <Link to="/equoterapia/consultar-profissional" className={styles.menuLink}>Consultar Profissional</Link>                    
@@ -38,10 +40,12 @@ const NavBar = () => {
         } 
     };
 
-    return (
+    return (        
         <nav className={styles.menu}>
             <div>
+                
                 {renderLinks()}
+
             </div>
         </nav>
     );

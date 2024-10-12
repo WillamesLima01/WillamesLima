@@ -136,7 +136,8 @@ const PractitionerForm = () => {
 
   return (
     <div className={`${styles.container} mt-5`}>
-      <h2>{id ? 'Editar Praticante' : 'Adicionar Praticante'}</h2>
+      <h2 className={`${styles.cabeca1} mb-4`}>{id ? 'Editar Praticante' : 'Adicionar Praticante'}</h2>
+      
       {errorMessage && (
         <div className='alert alert-danger' role="alert">
           {errorMessage}

@@ -24,15 +24,21 @@ const Login = () => {
       const users = response.data;
 
       const user = users.find(user => user.email === email && user.password === password);
-
+        alert(user.profession)
       if (user) {
         setError('');
         alert('Login bem-sucedido');
-        if (`${user.sector}` === "veterinaria") {
-          navigate(`/${user.sector.toLowerCase()}` + "/listar-equino"); // Redireciona para a página do setor
-        } else {
-          navigate(`/${user.sector.toLowerCase()}`); // Redireciona para a página do setor
-        }
+        if (`${user.profession}` === "Fonoaudiólogo" ||
+            `${user.profession}` === "Fisioterapeuta" ||
+            `${user.profession}` === "Psicólogo" ||
+            `${user.profession}` === "Auxiliar Administrativo"
+         ) {
+
+          navigate("/equoterapia"); // Redireciona para a página do setor
+
+        } else if (`${user.profession}` === "Veterinário") {
+          navigate("/veterinaria/listar-equino"); // Redireciona para a página do setor
+        }       
 
       } else {
         setError('Email ou senha inválidos');

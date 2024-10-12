@@ -1,5 +1,3 @@
-// PractitionerList.jsx
-
 import axios from '../../api';
 import { useEffect, useState } from 'react';
 import { FaPenClip, FaPenToSquare } from 'react-icons/fa6';
@@ -50,7 +48,7 @@ const PractitionerList = () => {
 
     return (
         <div className={`${styles.container} mt-5`}>
-            <h2 className='mb-4'>Lista de Praticantes</h2>
+            <h2 className={`${styles.cabeca1} mb-4`}>Lista de Praticantes</h2>
 
             <button onClick={() => navigate('/equoterapia/add-praticante')} className='btn btn-primary mb-2'>Cadastrar Praticante</button>
 

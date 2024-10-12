@@ -25,6 +25,9 @@ import PhysiotherapistAssist from './pages/ecotherapy/PhysiotherapistAssist';
 import FichaEvolucao from './pages/ecotherapy/FichaEvolucao';
 import PsychologistAssist from './pages/ecotherapy/PsychologistAssist';
 import SpeechTherapistAssist from './pages/ecotherapy/SpeechTherapistAssist';
+import UserList from './pages/usuarios/UserList';
+import UserForm from './pages/usuarios/UserForm';
+
 const App = () => {  
   return (
     <BrowserRouter>
@@ -40,11 +43,14 @@ const AppContent = () => {
   const isInventoryRoute = path.startsWith("/inventario");
   const isVeterinaryRoute = path.includes("/veterinaria");
   const isEcotherapyRoute = path.includes("/equoterapia");
+  const isUserRoute = path.includes("/usuarios");
   //alert(location.pathname)
+
   return (
     <div>       
       {isInventoryRoute  && <NavBar />}
       {isEcotherapyRoute && <NavBar />}
+      {isUserRoute && <NavBar />}
       {isVeterinaryRoute && <NavBarVeterinary />}      
       
       <div className="container">
@@ -68,7 +74,7 @@ const AppContent = () => {
           <Route path="/veterinaria/assistir-equino/:id" element={<EquineWatch />} />  
           <Route path="/veterinaria/editar-equino/:id" element={<EquineForm />} /> 
           <Route path='/veterinaria/resenha-equino/:id' element={<EquineDescriptiveReview />} />
-          <Route path="/ecoterapia" element={<Ecotherapy />} />
+          <Route path="/equoterapia" element={<Ecotherapy />} />
           <Route path="/equoterapia/listar-praticantes" element={<PractitionerList />} /> 
           <Route path='/equoterapia/add-praticante' element={<PractitionerForm />} />  
           <Route path='/equoterapia/editar-praticante/:id' element={<PractitionerForm />} />             
@@ -76,7 +82,10 @@ const AppContent = () => {
           <Route path='/equoterapia/dados-praticante/:id' element={<PractitionerDetailsData />} />           
           <Route path='/equoterapia/PhysiotherapistAssist' element={<PhysiotherapistAssist />} />   
           <Route path='/equoterapia/PsychologistAssist' element={<PsychologistAssist />} />           
-          <Route path='equoterapia/SpeechTherapistAssist' element={<SpeechTherapistAssist />} />
+          <Route path='/equoterapia/SpeechTherapistAssist' element={<SpeechTherapistAssist />} />
+          <Route path='/usuarios/usuarioList' element={<UserList/>} />          
+          <Route path='/usuarios/add-usuario' element={<UserForm/>} />  
+          <Route path='/usuarios/editar-usuario/:id' element={<UserForm />} />           
         </Routes>
       </div>
     </div>

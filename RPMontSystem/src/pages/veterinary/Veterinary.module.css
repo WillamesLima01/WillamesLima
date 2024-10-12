@@ -152,7 +152,7 @@ textarea {
 }
 
 .form_control {
-    height: 200px !important;
+    height: 200px;
 }
 
 .equineData {

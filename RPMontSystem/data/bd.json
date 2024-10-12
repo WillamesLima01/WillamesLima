@@ -1,5 +1,5 @@
 {
-  "users": [    
+  "users": [
     {
       "id": "1",
       "fullName": "willames Pereira de Lima",
@@ -7,33 +7,38 @@
       "email": "illaap@gmail.com",
       "cpf": "555.666.777-88",
       "contact": "+55 81 98765-4321",
-      "password": "321",
-      "sector": "veterinaria",
-      "profession": "FonoAudiólogo"
+      "profession": "Fonoaudiólogo",
+      "password": "321"
     },
     {
       "id": "2",
-      "fullName": "Mariana Souza da Silva",
-      "name": "marianasouza",
-      "email": "mariana@hotmail.com",
+      "fullName": "Maria Souza da Silva",
+      "name": "mariasouza",
+      "email": "maria@hotmail.com",
       "cpf": "123.456.323-11",
       "contact": "+55 83 98765-4321",
-      "password": "123",
-      "sector": "equoterapia",
-      "profession": "Fisioterapeuta"
+      "profession": "Fisioterapeuta",
+      "password": "123"
     },
     {
-      
-      
-    "id": "3",
+      "id": "3",
       "fullName": "Carlos Eduardo Ferreira",
       "name": "carloseduardo",
-      "email": "carlos.ferreira@example.com", 
-      "cpf": "111.222.333-44", 
-      "contact": "+55 61 98765-4321",   
-      "password": "carlos321",
-      "sector": "psicologia",
-      "profession": "Psicólogo"
+      "email": "carlos.ferreira@example.com",
+      "cpf": "111.222.333-44",
+      "contact": "+55 61 98765-4321",
+      "profession": "Psicólogo",
+      "password": "carlos321"
+    },
+    {
+      "fullName": "João Paulo",
+      "name": "João",
+      "email": "Joaopaulo@gmail.com",
+      "cpf": "212.545.878-99",
+      "contact": "(83) 9 88762293",
+      "password": "222",
+      "profession": "Veterinário",
+      "id": "5add"
     }
   ],
   "products": [
